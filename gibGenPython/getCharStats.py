@@ -23,7 +23,7 @@ import re			# for regex functions.
 
 # MARKOV CHAIN DATABASE GENERATING ALGORITHM.
 
-# What?! if I break up the below array definition over the wrong arbitrary sequence of newlines, it throws: '..line 24 SyntaxError: Non-UTF-8 code starting with '\xc5' in file getCharStats.py on line 24, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details'
+# What?! if I break up the below array definition over the wrong arbitrary sequence of newlines, it throws: '..line 24 SyntaxError: Non-UTF-8 code starting with '\xc5' in file getCharStats.py on line 24, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details' : TO DO: figure out why that is so--it feels risky of a bug in another environment (I get this on Windows invoking pythong from cygwin OR (I think) cmd) :
 # Includes space because it will be used as a statistical beginning and ending of word marker:
 alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','À','Á','Â','Ã','Ä','Å','Æ','Ç','È','É','Ê','Ë','Ì','Í','Î','Ï','Ð','Ñ','Ò','Ó','Ô','Õ','Ö','Ø','Ù','Ú','Û','Ü','Ý','Þ','ß','à','á','â','ã','ä','å','æ','ç','è','é','ê','ë','ì','í','î','ï','ð','ñ','ò','ó','ô','õ','ö','ø','ù','ú','û','ü','ý','þ','ÿ','Ł','ł','Ń','ń','Ņ','ņ','Ň','ň','Ŋ','ŋ','Ō','ō','Ŏ','ŏ','Ő','ő','Œ','œ','Ŕ','ŕ','Ŗ','ŗ','Ř','ř','Ś','ś','Ŝ','ŝ','Ş','ş','Š','š','Ţ','ţ','Ť','ť','Ŧ','ŧ','Ũ','ũ','Ū','ū','Ŭ','ŭ','Ů','ů','Ű','ű','Ŵ','ŵ','Ŷ','ŷ','Ÿ','Ź','ź','Ż','ż','Ž','ž','ſ','Α','Β','Γ','Δ','Ε','Ζ','Η','Θ','Ι','Κ','Λ','Μ','Ν','Ξ','Ο','Π','Ρ','Σ','Τ','Υ','Φ','Χ','Ψ','Ω','α','β','γ','δ','ε','ζ','η','θ','ι','κ','λ','μ',
 'ν','ξ','ο','π','ρ','ς',
@@ -60,18 +60,15 @@ allAlpha2perms = list(itertools.permutations(alphabet, 2))
 
 # search for all pairs in allAlpha2perms, counting matches, and write to stat file--it is *so nice* that itertools took care of permutations/nested looping for me:
 	# I think we will want overlapping matches (which I think this script also isn't doing; TO DO: that), re:https://stackoverflow.com/a/11430936/1397555 ? For now I'm going to assume that and ask someone who would know or bend my brain figuring it.
-# Open a file for writing in utf-8 encoding:
 
 # get file base name re: https://stackoverflow.com/a/678242/1397555
 paramFileNameNoExt =  os.path.splitext(sys.argv[1])[0]
 outfileName = paramFileNameNoExt + '.mkvch'
+# TO DO: figure out if the following should be codecs.open? Seems to work anyway:
+# Open a file for writing in utf-8 encoding:
 outfile = open(outfileName , "w", encoding='utf-8') 
 
 for element in allAlpha2perms:
-			# search pattern format e.g.:
-			# searchStr = 'ad'
-			# re.findall(searchStr, 'agbadedventure badaboom ba')
-			# returns: ['ad', 'ad']
 	searchStr = element[0] + element[1]
 	result = re.findall(searchStr, data)
 			# re: https://stackoverflow.com/a/3895658/1397555
