@@ -26,7 +26,7 @@ with codecs.open('test.mkvch', 'r', encoding='utf-8') as inputFile:
 inputFile.close
 
 # seed mustStartWith var with space ' '
-mustStartWith = 'a'
+mustStartWith = ' '
 	# loop as many times as genNumPhonemes var:
 genNumPhonemes = 25
 mustStartWithListMatches = list()
@@ -42,7 +42,7 @@ frequencySum = 0
 for pair, idx in data:            # e.g. a list within the data list, ('a', 'g')
 	partA = pair[0]               # the first character in pair; pair[0][0] + pair[0][1] would be both.
 	if partA == mustStartWith:
-		mustStartWithListMatches.append(partA); outputFile.write('appended partA value \'' + partA + '\' to array from pair \'' + pair + '\' with frequency ' + idx + '\n'); frequencySum = (frequencySum + int(idx)); print('frequencySum val is: ' + str(frequencySum))
+		mustStartWithListMatches.append(partA); frequencySum = (frequencySum + int(idx)); outputFile.write('appended partA value \'' + partA + '\' to array from pair \'' + pair + '\' with frequency ' + idx + '\nfrequencySum: ' + str(frequencySum) + '\n')
 	# TO DO:
 	# re-seed mustStartWith using second letter of that written pair
 	# previous two steps in loop until loop ends
