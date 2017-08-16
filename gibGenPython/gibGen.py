@@ -20,32 +20,38 @@ from random import randint
 
 # read database into an array of lists or summat wut format
 import csv
-with codecs.open('tst.mkvch', 'r', encoding='utf-8') as f:
-    reader = csv.reader(f)
+with codecs.open('test.mkvch', 'r', encoding='utf-8') as inputFile:
+    reader = csv.reader(inputFile)
     data = list(reader)		# I've verified that will write back to a file the exact same structure of a source database, if parsed correctly.
-f.close
+inputFile.close
 
 # seed mustStartWith var with space ' '
-mustStartWith = ' '
+mustStartWith = 'a'
 	# loop as many times as genNumPhonemes var:
-genNumPhonemes = 15
+genNumPhonemes = 25
 mustStartWithListMatches = list()
 
 # open gibberish generation output file for writing; TO DO: generate this file name based on source database and date?
-# outfile = open(outfileName , "w", encoding='utf-8')
+outputFile = codecs.open('wut.txt', 'w', encoding='utf-8')
+
 # find pair that starts with mustStartWith; and it may turn out that using for loops is the most legible and fast way to do this, re https://stackoverflow.com/a/1156143/1397555 :
 			# e.g. data[0] is "printed" by python as: ('a', 'g')
 			# -- and data[0][0] is: 'a' and data[0][1] is: 'g'
-for element in data:		# e.g. a list within the data list, ('a', 'g')
-	compStr = element[0][0]
-	if compStr == mustStartWith:
-		mustStartWithListMatches.append(compStr)
-	# TO DO: write that pair to file isntead of stdout (stdout is for development)
+foo = 'bor'      # frequencySum = (frequencySum + str(idx))
+frequencySum = 0
+for pair, idx in data:            # e.g. a list within the data list, ('a', 'g')
+	partA = pair[0]               # the first character in pair; pair[0][0] + pair[0][1] would be both.
+	if partA == mustStartWith:
+		mustStartWithListMatches.append(partA); outputFile.write('appended partA value \'' + partA + '\' to array from pair \'' + pair + '\' with frequency ' + idx + '\n'); frequencySum = (frequencySum + int(idx)); print('frequencySum val is: ' + str(frequencySum))
+	# TO DO:
 	# re-seed mustStartWith using second letter of that written pair
 	# previous two steps in loop until loop ends
 
-
-
 mustStartWithListMatchesLength = len(mustStartWithListMatches)
-for x in range(0, genNumPhonemes):
-	print('foo')
+# outputFile.write('\n\nvalues in mustStartWithListMatches:\n')
+# for element in mustStartWithListMatches:
+#     outputFile.write(element + '\n')
+
+outputFile.close
+
+# print(mustStartWithListMatchesLength)
