@@ -18,7 +18,7 @@ from random import randint
 
 # read database into an array of lists or summat wut format
 import csv
-with codecs.open('databases_corpora/TheJabberwocky.mkvch', 'r', encoding='utf-8') as inputFile:
+with codecs.open('databases/TheJabberwocky.mkvch', 'r', encoding='utf-8') as inputFile:
     reader = csv.reader(inputFile)
     data = list(reader)		# I've verified that will write back to a file the exact same structure of a source database, if parsed correctly.
 inputFile.close
