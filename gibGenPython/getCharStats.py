@@ -18,6 +18,7 @@ import re							# for regex functions.
 # make this accept specific cli opts via opts library? re: https://gist.github.com/dideler/2395703
 # filter very common words out of imported text?
 # adopt regex https://pypi.python.org/pypi/regex/ instead?
+# manually remove double-space '  ' from resulting letter pairs array (it is always the last item maybe?)
 
 # NOT TO DO: calculate the least common factor of all letter pair occurances and divide them all by that to reduce the number space. First, this breaks the set if some of them are '1', and second, no. If the numbers get so huge that I have to get numPy, I might start considering that.
 
