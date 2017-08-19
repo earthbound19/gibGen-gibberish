@@ -14,9 +14,9 @@
 # dump recombobulation var to file when it gets to certain huge size, then continue filling it.
 # make gibberish dump file name partly based on timestamp.
 
-import sys			# comment out for release; only for development.
+import sys            # comment out for release; only for development.
 import itertools
-import codecs		# allows opening a file with utf-8 
+import codecs        # allows opening a file with utf-8 
 from random import randint
 import csv          # to allow reading database into an array of lists or summat wut format
 import argparse     # to parse terminal arguments
@@ -38,7 +38,7 @@ else:
 # READ database into var data
 with codecs.open(args.database, 'r', encoding='utf-8') as inputFile:
     reader = csv.reader(inputFile)
-    data = list(reader)		# e.g. data[0] == ['aa', '4426'], data[0][0] is: aa, data[0][1] is: 4426. I've verified that this object list data[lists] will write back to a file the exact same structure of a source database, if parsed correctly.
+    data = list(reader)        # e.g. data[0] == ['aa', '4426'], data[0][0] is: aa, data[0][1] is: 4426. I've verified that this object list data[lists] will write back to a file the exact same structure of a source database, if parsed correctly.
 inputFile.close
 
 # open gibberish generation output file for writing; TO DO: generate this file name based on source database and date?
