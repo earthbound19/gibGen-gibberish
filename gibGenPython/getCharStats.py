@@ -13,20 +13,15 @@ from itertools import product        # for permutation with repetition, re: http
 import re                            # for regex functions.
 
 # TO DO:
-# Write a separate script which generates gibberish via an .mkvch file (which type of file this script creates by parsing an input text)
-# include punctuation in this array? At a starting minimum will use a space character ' '.
-# add instr. to print res. to text file via >
-# add usage instr. -- for now input text is argv[1].
-# make this accept specific cli opts via opts library? re: https://gist.github.com/dideler/2395703
+
+# include punctuation in this array? (It already includes spaces for word termination.)
 # filter very common words out of imported text?
-# adopt regex https://pypi.python.org/pypi/regex/ instead?
 # manually remove double-space '  ' from resulting letter pairs array (it is always the last item maybe?)
 
 # NOT TO DO: calculate the least common factor of all letter pair occurances and divide them all by that to reduce the number space. First, this breaks the set if some of them are '1', and second, no. If the numbers get so huge that I have to get numPy, I might start considering that.
 
 # MARKOV CHAIN DATABASE GENERATING ALGORITHM.
 
-# What?! if I break up the below array definition over the wrong arbitrary sequence of newlines, it throws: '..line 24 SyntaxError: Non-UTF-8 code starting with '\xc5' in file getCharStats.py on line 24, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details' : TO DO: figure out why that is so--it feels risky of a bug in another environment (I get this on Windows invoking pythong from cygwin OR (I think) cmd) :
 # OPTIONS: 1) a more extensive alphabet for texts from a variety of European languages other than English OR 2) narrow alphabet from smaller and *ethnocentric* ACSII code page. Both alphabets include a space character because it will be used as a statistical beginning and ending of word marker. For extensive alphabet uncomment the next line and comment out the line after it; for narrow alphabest visa-versa:
 alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿŁłŃńŅņŇňŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŴŵŶŷŸŹźŻżŽžſΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρςστυφχψωАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяỲ '
 # alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ '
@@ -70,7 +65,7 @@ for element in allAlpha2perms:
         # print(result[0] + ',' + resultLenStr)
 outfile.close()
 
-print("DONE. Letter matching statistics for input file are written to: " + outfileName)
+print("\nDONE. Letter matching statistics for input file are written to: " + outfileName)
 
 # DEV NOTES:
     # can sort via 'nix util of that name by column e.g.:
