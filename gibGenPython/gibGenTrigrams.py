@@ -1,5 +1,7 @@
+# IN DEVELOPMENT; Refactoring gibGen.py to parametrically work on bigrams, trigrams, or more. Will probably clear that code and paste this over it when done.
+
 # DESCRIPTION
-# Generates (recombobulates) gibberish from a database of word pairing statistics. See comments at the top of getBigramStats.py to get such a database. Writes results to gib.txt
+# Generates (recombobulates) gibberish from a database of word pairing statistics. See comments at the top of getCharStats.py to get such a database. Writes results to gib.txt
 
 # USAGE
 # thisScript.py -s [source database.mkvch] -c [count of words to generate]
@@ -44,7 +46,7 @@ logFile = codecs.open('gibGen_py_log.txt', 'w', encoding='utf-8')
 
 recombobulation = ''
 # seed mustStartWith var with space ' '
-mustStartWith = ' '
+mustStartWith = ' a'
 genNumPhonemes = int(args.count)
 frequencySum = 0
 firstCharMatchedList = list()      # This will be a list of lists!
@@ -54,7 +56,8 @@ for i in range(0, genNumPhonemes):
     # It may turn out that using for loops is the most legible and fast way to do this, re https://stackoverflow.com/a/1156143/1397555 :
         # LOOK FOR the whole set of possible matches for mustStartWith and add them to a list of lists firstCharMatchedList; summing the occurances given from the source .mkvch into frequencySum to be used later.
     for pair, idx in data:
-        partA = pair[0]        # pair[0] is e.g. 'a', the first character in pair; (pair[0][0] + pair[0][1]) would be both e.g. 'ab'.
+        partA = pair[0] + pair[1]       # REFACTOR HERE to allow parameterization of string length.
+        # pair[0] is e.g. 'a', the first character in pair; (pair[0][0] + pair[0][1]) would be both e.g. 'ab'.
         if partA == mustStartWith:
             frequencySum = (frequencySum + int(idx)); tmpTuple = [pair, frequencySum]
             firstCharMatchedList.append(tmpTuple); logFile.write('appended tmpTuple value ' + str(tmpTuple) + ' where\npair value is \'' + pair + '\'\nfrequency (idx) is ' + idx + ' and\nfrequencySum is ' + str(frequencySum) + '\n')
@@ -69,10 +72,13 @@ for i in range(0, genNumPhonemes):
             # idx == iteration in loop, pair e.g. == [' a', 630737], pair[0] == ' a', pair[1] == 630737. TO DO: learn, would a third var listing in the for enumeration get the second list item in the list at firstCharMatchedList(idx)?
             if pair[1] >= PRND:
                 pickedPair = str( firstCharMatchedList[ (idx - 1) ] )
-                nextLetter = pickedPair[3]
+                print('pickedPair val is ' + pickedPair)
+                nextLetter = pickedPair[3] + pickedPair[4]       # REFACTOR to admit more than one char parametrically here.
+                print('nextLetter val is \'' + nextLetter + '\'')
                 logFile.write('! -- PICK nextLetter \'' + nextLetter + '\' for pickedPair ' + pickedPair + ' --! where frequency surpassed the second item in that list, at ' + str(pair[1]) + '\nand mustStartWith was \'' + mustStartWith + '\'\n')
                 mustStartWith = nextLetter      # I don't know that I wrote that crucual line before now; broken so long and mystified why! All the logic was tight, but a wee little seed was missing! :)
                 logFile.write('and mustStartWith is now \'' + mustStartWith + '\'\n')
+                sys.exit()
                 break
     # IF A MATCH WAS NOT FOUND (frequencySum == 0), terminate the word by setting nextLetter to ' ', and set mustStartWith to a random selection from the entire data set of first letters (that appear in a group).
     else:
