@@ -2,7 +2,7 @@
 # Generates (recombobulates) gibberish from a database of word pairing statistics. See comments at the top of getBigramStats.py to get such a database. Writes results to gib.txt
 
 # USAGE
-# thisScript.py -s [source database.mkvch] -c [count of words to generate]
+# python3 thisScript.py -d [source database.mkvch] -c [count of words to generate]
 
 # NOTES: This may only work with python3. Also, the only source database I have producing useful output at this writing is databases/TheJabberwocky.mkvch, at this writing. TO DO: fix that: maybe by having this work statistically on trigrams instead of bigrams.
 

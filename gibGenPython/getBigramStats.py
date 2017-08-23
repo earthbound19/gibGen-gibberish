@@ -2,7 +2,7 @@
 # Takes an input text file (and accepts one with an attempted wide acceptance of international (European) alphabet characters; in utf-8), extracts letter pair statistics and writes them to a database named <inputFileBaseName>.mkvch (.mkvch, because I may be using Markov chains? I'm not certain). Statistics are written to the database in the form et,3289 (<letter pair,how often the pair was found in the input text). The .mkvch database may then be used to generate statistically similar gibberish via gibGen.py. Note that statistics for spaces before and after letters are also in the database; this serves to terminate and begin generated words during recombobulation.
 
 # USAGE
-# python thisScript.py inputFile.txt
+# python3 thisScript.py inputFile.txt
 
 # NOTE This may only work with python3.
 
