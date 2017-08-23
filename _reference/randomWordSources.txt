@@ -30,14 +30,16 @@ http://storage.googleapis.com/books/ngrams/books/datasetsv2.html
 EDUCATIONAL:
 http://tolkiengateway.net/wiki/Uncommon_words
 
+Names have been sourced from the following languages via behindthename.com:
+
 [Ten oldest spoken languages](https://theculturetrip.com/asia/india/articles/the-10-oldest-languages-still-spoken-in-the-world-today/)
 - Hebrew
 - Basque
 - Tamil
-- Lithuanian - have copied names to here
+- Lithuanian
 - Farsi (Persian)
 - Icelandic
 - Macedonian
 - Finnish
 - Georgian
-- Irish Gaelic
+- Irish Gaelic, but sourced here: http://www.namenerds.com/irish/trad.html
