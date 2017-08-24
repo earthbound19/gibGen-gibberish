@@ -1,0 +1,36 @@
+ áthlthrirn 
+
+log debugging:
+ 
+				Selected PRND 1 from range 0,3
+list '['yti', 3]' from mustStartWith 'yt' PICK 'i'
+' ou tyyt' += 'i':
+' ou tyyti'
+IT BROKE HERE; it selected a non-matching triplet:
+				Selected PRND 45 from range 0,71
+list '[' ta', 39]' from mustStartWith 'ti' PICK 'a'
+' ou tyyti' += 'a':
+' ou tyytia'
+				Selected PRND 16 from range 0,130
+list '['izo', 10]' from mustStartWith 'ta' PICK 'o'
+' ou tyytia' += 'o':
+' ou tyytiao'
+THEN UNBROKE? HERE:
+				Selected PRND 5 from range 0,16
+list '['zou', 16]' from mustStartWith 'zo' PICK 'u'
+' ou tyytiao' += 'u':
+' ou tyytiaou'
+
+
+
+--
+ist '['a f', 173]' from mustStartWith 'a ' PICK 'f'
+				mustStartWith val now ' f'
+' a ' += 'f':
+' a f'
+				Selected PRND 31 from range 0,57
+ERROR: it did not pick a triple starting with ' f' where that is available:
+list '['jan', 57]' from mustStartWith ' f' PICK 'n'
+				mustStartWith val now 'an'
+' a f' += 'n':
+' a fn'

@@ -1,5 +1,5 @@
 # DESCRIPTION
-# Generates (recombobulates) gibberish from a database of word pairing statistics. See comments at the top of getBigramStats.py to get such a database. Writes results to gib.txt
+# Generates (recombobulates) gibberish from a database of character pair statistics (bigrams). See comments at the top of getBigramStats.py to get such a database. Writes results to gib.txt
 
 # USAGE
 # python3 thisScript.py -d [source database.mkvch] -c [count of words to generate]
@@ -11,7 +11,7 @@
 # dump recombobulation var to file when it gets to certain huge size, then continue filling it.
 # make gibberish dump file name partly based on timestamp.
 
-import sys            # comment out for release; only for development.
+# import sys            # comment out for release; only for development.
 import itertools
 import codecs        # allows opening a file with utf-8 
 from random import randint
@@ -26,7 +26,7 @@ args = argParser.parse_args()
 if args.database:
     print('Source db ' + args.database + ' specified.')
 else:
-    args.database = 'databases/beowulf.mkvch'
+    args.database = '../databases/beowulfBi.mkvch'
 if args.count:
     print('Letter groups to create number ' + args.count + ' specified.')
 else:
@@ -56,8 +56,10 @@ for i in range(0, genNumPhonemes):
     for pair, idx in data:
         partA = pair[0]        # pair[0] is e.g. 'a', the first character in pair; (pair[0][0] + pair[0][1]) would be both e.g. 'ab'.
         if partA == mustStartWith:
-            frequencySum = (frequencySum + int(idx)); tmpTuple = [pair, frequencySum]
-            firstCharMatchedList.append(tmpTuple); logFile.write('appended tmpTuple value ' + str(tmpTuple) + ' where\npair value is \'' + pair + '\'\nfrequency (idx) is ' + idx + ' and\nfrequencySum is ' + str(frequencySum) + '\n')
+            frequencySum = (frequencySum + int(idx))
+            tmpTuple = [pair, frequencySum]
+            firstCharMatchedList.append(tmpTuple)
+            logFile.write('appended tmpTuple value ' + str(tmpTuple) + ' where\npair value is \'' + pair + '\'\nfrequency (idx) is ' + idx + ' and\nfrequencySum is ' + str(frequencySum) + '\n')
 
     # WITH FIRSTCHARMATCHEDLIST populated with matches copied from var data[lists], randomly pick one of the pairs by first character in pair matching mustStartWith, accounting for statistical frequency (akin to data[0][1] == 4426). If there will not be a match (akin to data[0][0][0] == 'a') for mustStartWith, pick any first letter from any pair in the whole data list of lists.
 
@@ -79,7 +81,8 @@ for i in range(0, genNumPhonemes):
         nextLetter = ' '
         dataLen = len(data)
         PRND = randint(0, (dataLen - 1) )
-        logFile.write('Wow--! No match starts with \'' + mustStartWith + '\'; terminated word and picking mustStartWith val from data set . . .\n'); mustStartWith = data[ (PRND) ][0][0]
+        logFile.write('Wow--! No match starts with \'' + mustStartWith + '\'; terminated word and picking mustStartWith val from data set . . .\n')
+        mustStartWith = data[ (PRND) ][0][0]
         logFile.write('PICKED new value \'' + mustStartWith + '\' for mustStartWith.\n')
 
     # WHATEVER HAPPENED for the value of frequencySum, we covered all possible cases to assign to nextLetter, so can do this now:
