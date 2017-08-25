@@ -1,0 +1,6 @@
+Source db testTri.mkvch specified.
+Letter groups to create number 50 specified.
+
+O frabjous day!
+DONE. Wrote gibberish to gibber_out.txt.
+

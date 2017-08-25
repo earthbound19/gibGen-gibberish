@@ -1,3 +1,5 @@
+# IN DEVELOPMENT. At this writing has a fatal bug.
+
 # DESCRIPTION
 # Generates (recombobulates) gibberish from a database of character pair statistics (bigrams). See comments at the top of getBigramStats.py to get such a database. Writes results to gib.txt
 
@@ -59,7 +61,7 @@ for i in range(0, genNumPhonemes):
             frequencySum = (frequencySum + int(idx))
             tmpTuple = [pair, frequencySum]
             firstCharMatchedList.append(tmpTuple)
-            logFile.write('appended tmpTuple value ' + str(tmpTuple) + ' where\npair value is \'' + pair + '\'\nfrequency (idx) is ' + idx + ' and\nfrequencySum is ' + str(frequencySum) + '\n')
+            # logFile.write('appended tmpTuple value ' + str(tmpTuple) + ' where\npair value is \'' + pair + '\'\nfrequency (idx) is ' + idx + ' and\nfrequencySum is ' + str(frequencySum) + '\n')
 
     # WITH FIRSTCHARMATCHEDLIST populated with matches copied from var data[lists], randomly pick one of the pairs by first character in pair matching mustStartWith, accounting for statistical frequency (akin to data[0][1] == 4426). If there will not be a match (akin to data[0][0][0] == 'a') for mustStartWith, pick any first letter from any pair in the whole data list of lists.
 
