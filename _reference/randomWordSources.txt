@@ -1,0 +1,45 @@
+TO DO: trim the compilation to exclude the unfriendly words given in some lists here: https://github.com/first20hours/google-10000-english
+
+word resources which won't fit in a git repo: google books 2-n-gram nouns (10+GB!)
+
+other resoruces: norvig.com/ngrams/
+
+random word sources:
+http://www.theprojecttwins.com/a-z-of-unusual-words
+http://www.alphadictionary.com/articles/100_funniest_words.html
+https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/PG/2006/04/20001-30000
+https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/PG/2006/04/30001-40000
+
+word lists including rare words:
+various at http://norvig.com/ngrams/ , e.g.:
+http://norvig.com/ngrams/count_1w.txt re: https://github.com/first20hours/google-10000-english
+http://number27.org/assets/misc/words.txt re: https://www.quora.com/Where-could-I-find-a-list-of-English-words-in-order-of-their-usage-frequency
+ONLY PARTIALLY TAPPED: http://phrontistery.info/f.html
+
+AS YET UNTAPPED words:
+https://en.oxforddictionaries.com/explore/weird-and-wonderful-words | Weird and wonderful words | Oxford Dictionaries
+http://users.tinyonline.co.uk/gswithenbank/unuwords.htm#G | Unusual Words
+https://www.vocabulary.com/lists/18146 | Funny words - Vocabulary List : Vocabulary.com
+http://norvig.com/ngrams/ | Natural Language Corpus Data: Beautiful Data
+http://www.wordcount.org/index2.html | Wordcount · Tracking the Way We Use Language
+
+possibly more exhaustive and divisible by time period, but more involved to parse:
+http://storage.googleapis.com/books/ngrams/books/datasetsv2.html
+
+
+EDUCATIONAL:
+http://tolkiengateway.net/wiki/Uncommon_words
+
+Names have been sourced from the following languages via behindthename.com:
+
+[Ten oldest spoken languages](https://theculturetrip.com/asia/india/articles/the-10-oldest-languages-still-spoken-in-the-world-today/)
+- Hebrew
+- Basque
+- Tamil
+- Lithuanian
+- Farsi (Persian)
+- Icelandic
+- Macedonian
+- Finnish
+- Georgian
+- Irish Gaelic, but sourced here: http://www.namenerds.com/irish/trad.html

@@ -1,0 +1,3 @@
+EXCEPT DON'T curl -o ~/Downloads/com.zerowidth.launched.stretch_break.plist http://launched.zerowidth.com/plists/759869b0-d9c0-0134-6d05-6588fa129920.xml
+EXCEPT DON'T sudo cp ~/Downloads/com.zerowidth.launched.stretch_break.plist /Library/LaunchDaemons
+EXCEPT DON'T sudo launchctl load -w /Library/LaunchDaemons/com.zerowidth.launched.stretch_break.plist

@@ -1,0 +1,25 @@
+# List of generators and tools
+
+- [Problem and solution spelled out in Haskell](http://dirko.github.io/Haskell-character-ngrams/)
+- [Details of an approach; dunno if it uses NLTK](http://www.decontextualize.com/teaching/rwet/n-grams-and-markov-chains/)
+- [NTLK reference](http://www.nltk.org/py-modindex.html)
+- [half-solved here?](https://stackoverflow.com/questions/13857686/how-to-use-nltk-to-generate-random-paragraphs)
+- [oh, that python library already does this?](https://stackoverflow.com/questions/17531684/n-grams-in-python-four-five-six-grams)
+- [N-gram extraction in UTF makes my Python script perhaps unnecessary](https://homepages.inf.ed.ac.uk/lzhang10/ngram.html)
+- [word and character bigrams etc.](
+http://johno.jsmf.net/knowhow/ngrams/index.php?table=sk-sme-char-4gram&paragraphs=5&length=100)
+- http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html
+- https://radimrehurek.com/gensim/models/phrases.html
+- [c extractor and generator]( http://trigrams.readthedocs.io/en/latest/_modules/trigrams.html)
+- [other python means](https://stackoverflow.com/questions/32441605/generating-ngrams-unigrams-bigrams-etc-from-a-large-corpus-of-txt-files-and-t)
+- err . . did I already gank the following? : http://agiliq.com/blog/2009/06/generating-pseudo-random-text-with-markov-chains-u/
+- ? https://snippets.aktagon.com/snippets/619-how-to-generate-n-grams-with-python-and-nltk
+- ngram generate random sentences reference: https://julius.osdn.jp/juliusbook/en/generate_ngram.html
+- part of speech n-gram generator failure: https://github.com/maiamcc/markovgen
+
+# "Topical" generators
+- [So much other fun](https://pdos.csail.mit.edu/archive/scigen/)
+[Fifty Shades (farce) text generator](/Users/earthbound/Documents/breakTime/gibberish_computer_generated/various/sortLinesByLength.sh) -- uses Dada Engine and custom grammar.
+
+Related to topical generators:
+- [Huh.](https://www.futilitycloset.com/2017/04/17/a-poets-arsenal/)

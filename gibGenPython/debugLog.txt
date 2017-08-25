@@ -1,0 +1,73 @@
+how'd eecebebcbbbbc ? :
+
+frequencySum in else case block is 0
+else case encountered where no match was found!
+--! No match starts with '  '; terminated word and picking mustStartWith val from data set . . .
+PICKED new value 'ad' for mustStartWith where data[ PRND ][0] val is 'ead'
+'' += ' ':
+' '
+PICKED 'e' from 'ad' > '['ade', 3]'
+				mustStartWith val now 'de'
+' ' += 'e':
+' e'
+ERR:
+PICKED 'e' from 'de' > '['ade', 3]'
+				mustStartWith val now 'de'
+' e' += 'e':
+' ee'
+ERR:
+PICKED 'c' from 'de' > '['adc', 2]'
+				mustStartWith val now 'dc'
+' ee' += 'c':
+' eec'
+ERR:
+PICKED 'e' from 'dc' > '['ade', 3]'
+				mustStartWith val now 'de'
+' eec' += 'e':
+' eece'
+ERR:
+PICKED 'b' from 'de' > '['adb', 1]'
+				mustStartWith val now 'db'
+' eece' += 'b':
+' eeceb'
+ERR:
+PICKED 'e' from 'db' > '['ade', 3]'
+				mustStartWith val now 'de'
+' eeceb' += 'e':
+' eecebe'
+PICKED 'b' from 'de' > '['adb', 1]'
+				mustStartWith val now 'db'
+' eecebe' += 'b':
+' eecebeb'
+PICKED 'c' from 'db' > '['adc', 2]'
+				mustStartWith val now 'dc'
+' eecebeb' += 'c':
+' eecebebc'
+PICKED 'b' from 'dc' > '['adb', 1]'
+				mustStartWith val now 'db'
+' eecebebc' += 'b':
+' eecebebcb'
+PICKED 'b' from 'db' > '['adb', 1]'
+				mustStartWith val now 'db'
+' eecebebcb' += 'b':
+' eecebebcbb'
+PICKED 'b' from 'db' > '['adb', 1]'
+				mustStartWith val now 'db'
+' eecebebcbb' += 'b':
+' eecebebcbbb'
+PICKED 'b' from 'db' > '['adb', 1]'
+				mustStartWith val now 'db'
+' eecebebcbbb' += 'b':
+' eecebebcbbbb'
+PICKED 'c' from 'db' > '['adc', 2]'
+				mustStartWith val now 'dc'
+' eecebebcbbbb' += 'c':
+' eecebebcbbbbc'
+PICKED 'b' from 'dc' > '['adb', 1]'
+				mustStartWith val now 'db'
+' eecebebcbbbbc' += 'b':
+' eecebebcbbbbcb'
+PICKED 'b' from 'db' > '['adb', 1]'
+				mustStartWith val now 'db'
+' eecebebcbbbbcb' += 'b':
+' eecebebcbbbbcbb'
