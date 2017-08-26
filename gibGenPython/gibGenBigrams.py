@@ -49,7 +49,7 @@ charMatchesList = list()
 # loop as many times as genNumPhonemes var:
 for i in range(0, genNumPhonemes):
     charMatchesList.clear()       # This list of lists is cleared at each outer loop iteration.
-    addedFreq = 0                 #So is this.
+    addedFreq = 0                 # So is this.
     # logFile.write('-- SEARCHING for match candidates from data where where mustStartWith is \'' + mustStartWith + '\' . . .\n')
     # It may turn out that using for loops is the most legible and fast way to do this, re https://stackoverflow.com/a/1156143/1397555 :
         # LOOK FOR the whole set of possible matches for mustStartWith and add them to a list of lists charMatchesList; summing the occurances given from the source .mkvch into addedFreq to be used later.
