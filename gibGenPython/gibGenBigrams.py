@@ -46,11 +46,13 @@ recombobulation = ''
 # seed mustStartWith var with space ' '
 mustStartWith = ' '
 genNumPhonemes = int(args.count)
-addedFreq = 0
-charMatchesList = list()      # This will be a list of lists!
+charMatchesList = list()
+
 # loop as many times as genNumPhonemes var:
 for i in range(0, genNumPhonemes):
-    logFile.write('-- SEARCHING for match candidates from data where where mustStartWith is \'' + mustStartWith + '\' . . .\n')
+    charMatchesList.clear()       # This list of lists is cleared at each outer loop iteration.
+    addedFreq = 0                 #So is this.
+    # logFile.write('-- SEARCHING for match candidates from data where where mustStartWith is \'' + mustStartWith + '\' . . .\n')
     # It may turn out that using for loops is the most legible and fast way to do this, re https://stackoverflow.com/a/1156143/1397555 :
         # LOOK FOR the whole set of possible matches for mustStartWith and add them to a list of lists charMatchesList; summing the occurances given from the source .mkvch into addedFreq to be used later.
     for pair, freq in data:
@@ -59,27 +61,27 @@ for i in range(0, genNumPhonemes):
             addedFreq = int(addedFreq + int(freq))
             tmpTuple = [pair, int(freq)]
             charMatchesList.append(tmpTuple)
-            logFile.write('added ' + str(tmpTuple) + ' at pair \'' + pair + '\', freq ' + freq + ', addedFreq ' + str(addedFreq) + '\n')
+            # logFile.write('added ' + str(tmpTuple) + ' at pair \'' + pair + '\', freq ' + freq + ', addedFreq ' + str(addedFreq) + '\n')
 
     # WITH charMatchesList populated with matches copied from var data[lists], randomly pick one of the pairs by first character in pair matching mustStartWith, accounting for statistical frequency (akin to data[0][1] == 4426). If there will not be a match (akin to data[0][0][0] == 'a') for mustStartWith, pick any first letter from any pair in the whole data list of lists.
 
     # IF A MATCH WAS FOUND (addedFreq != 0), assign it to nextLetter for later recombobulation.
     if addedFreq != 0:
         PRND = randint(0, addedFreq)
-        logFile.write('Selected PRND ' + str(PRND) + ' from range 0,' + str(addedFreq) + '\n')
+        # logFile.write('Selected PRND ' + str(PRND) + ' from range 0,' + str(addedFreq) + '\n')
         freqIterAdd = 0
         for idx, list in enumerate(charMatchesList):
-            logFile.write('at enumerate list ' + str(list) + ' idx ' + str(idx) + '; list[1] ' + str(list[1]) + '; PRND ' + str(PRND) + '\n')
-            logFile.write('freqIterAdd ' + str(freqIterAdd) + ' . . . ')
+            # logFile.write('at enumerate list ' + str(list) + ' idx ' + str(idx) + '; list[1] ' + str(list[1]) + '; PRND ' + str(PRND) + '\n')
+            # logFile.write('freqIterAdd ' + str(freqIterAdd) + ' . . . ')
             freqIterAdd += int(list[1])
-            logFile.write('now incremented to ' + str(freqIterAdd) + '\n')
+            # logFile.write('now incremented to ' + str(freqIterAdd) + '\n')
             if freqIterAdd >= PRND:
                 pickedPair = str( charMatchesList[ (idx - 1) ] )
                 nextLetter = pickedPair[3]
-                logFile.write('mustStartWith is \'' + mustStartWith + '\' . . .\n')
-                logFile.write('from pickedPair ' + pickedPair + ' PICK nextLetter \'' + nextLetter + '\' at freqIterAdd (' + str(freqIterAdd) + ') >= PRND (' + str(PRND) + ')\n')
+                # logFile.write('mustStartWith is \'' + mustStartWith + '\' . . .\n')
+                logFile.write('!-- FROM pickedPair ' + pickedPair + ' PICK nextLetter \'' + nextLetter + '\' at freqIterAdd (' + str(freqIterAdd) + ') >= PRND (' + str(PRND) + '); \n')
                 mustStartWith = nextLetter
-                logFile.write('mustStartWith is now \'' + mustStartWith + '\'\n')
+                # logFile.write('mustStartWith is now \'' + mustStartWith + '\'\n')
                 break
     # IF A MATCH WAS NOT FOUND (addedFreq == 0), terminate the word by setting nextLetter to ' ', and set mustStartWith to a random selection from the entire data set of first letters (that appear in a group).
     else:
@@ -92,8 +94,6 @@ for i in range(0, genNumPhonemes):
 
     # WHATEVER HAPPENED for the value of addedFreq, we covered all possible cases to assign to nextLetter, so can do this now:
     recombobulation = (recombobulation + nextLetter)
-    # reset addedFreq for the next iteration of the outmost loop:
-    addedFreq = 0
 # for loop ends
 
 
