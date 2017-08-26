@@ -10,7 +10,6 @@
 # make gibberish dump file name partly based on timestamp.
 
 # import sys            # comment out for release; only for development.
-import itertools
 import codecs        # allows opening a file with utf-8 
 from random import randint
 import csv          # to allow reading database into an array of lists or summat wut format
