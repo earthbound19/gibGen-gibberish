@@ -2,12 +2,10 @@
 # Generates (recombobulates) gibberish from a database of character pair statistics (bigrams). See comments at the top of getBigramStats.py to get such a database. Writes results to gibber_out.txt
 
 # USAGE
-# python3 thisScript.py -d [source database.mkvch] -c [count of words to generate]
+# See commends under USAGE in source code of gibGenTrigrams.py.
 
 # TO DO
-# make log file optional (which means make a log function and refactor to pass it strings conditionally)
-# dump recombobulation var to file when it gets to certain huge size, then continue filling it.
-# make gibberish dump file name partly based on timestamp.
+# See TO DO list in gibGenTrigrams.py
 
 # import sys            # comment out for release; only for development.
 import codecs        # allows opening a file with utf-8 
@@ -35,7 +33,7 @@ with codecs.open(args.database, 'r', encoding='utf-8') as inputFile:
     data = list(reader)        # e.g. data[0] == ['aa', '4426'], data[0][0] is: aa, data[0][1] is: 4426. I've verified that this object list data[lists] will write back to a file the exact same structure of a source database, if parsed correctly.
 inputFile.close
 
-# open gibberish generation output file for writing; TO DO: generate this file name based on source database and date?
+# open run log file for writing.
 logFile = codecs.open('gibGen_py_log.txt', 'w', encoding='utf-8')
 
 

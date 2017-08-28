@@ -5,6 +5,8 @@
 
 # USAGE
 # python3 thisScript.py -d [source database.mkvch] -c [count of words to generate]
+# For example:
+# python3 gibGenTrigrams.py -d ../databases/onomatopoeiaTri.mkvch -c 500
 
 # TO DO
 # make log file optional (which means make a log function and refactor to pass it strings conditionally)
@@ -25,7 +27,7 @@ args = argParser.parse_args()
 if args.database:
     print('Source db ' + args.database + ' specified.')
 else:
-    args.database = '../databases/tenOldestSpokenLanguagesNamesBi.mkvch'
+    args.database = '../databases/tenOldestSpokenLanguagesNamesTri.mkvch'
 if args.count:
     print('Letter groups to create number ' + args.count + ' specified.')
 else:
@@ -34,16 +36,16 @@ else:
 # READ database into var data
 with codecs.open(args.database, 'r', encoding='utf-8') as inputFile:
     reader = csv.reader(inputFile)
-    data = list(reader)        # e.g. data[0] == ['aa', '4426'], data[0][0] is: aa, data[0][1] is: 4426. I've verified that this object list data[lists] will write back to a file the exact same structure of a source database, if parsed correctly.
+    data = list(reader)        # for TRIGRAMS e.g. data[0] == ['aaa', '4426'], data[0][0] is: aaa, data[0][1] is: 4426.
 inputFile.close
 
-# open gibberish generation output file for writing; TO DO: generate this file name based on source database and date?
+# open run log file for writing.
 logFile = codecs.open('gibGen_py_log.txt', 'w', encoding='utf-8')
 
 
 recombobulation = ''
-# seed mustStartWith var with space ' '
-mustStartWith = ' '
+# seed mustStartWith var with space ' ' (or for trigrams make that a double space '  ')
+mustStartWith = '  '
 genNumPhonemes = int(args.count)
 charMatchesList = list()
 
@@ -55,14 +57,14 @@ for i in range(0, genNumPhonemes):
     # It may turn out that using for loops is the most legible and fast way to do this, re https://stackoverflow.com/a/1156143/1397555 :
         # LOOK FOR the whole set of possible matches for mustStartWith and add them to a list of lists charMatchesList; summing the occurances given from the source .mkvch into addedFreq to be used later.
     for pair, freq in data:
-        partA = pair[0]        # pair[0] is e.g. 'a', the first character in pair; (pair[0][0] + pair[0][1]) would be both e.g. 'ab'.
+        partA = pair[0] + pair[1]        # For BIGRAM use, pair[0] is e.g. 'a', the first character in pair; for TRIGRAM use, (pair[0][0] + pair[0][1]) would be both e.g. 'ab'.
         if partA == mustStartWith:
             addedFreq = int(addedFreq + int(freq))
             tmpTuple = [pair, int(freq)]
             charMatchesList.append(tmpTuple)
             # logFile.write('added ' + str(tmpTuple) + ' at pair \'' + pair + '\', freq ' + freq + ', addedFreq ' + str(addedFreq) + '\n')
 
-    # WITH charMatchesList populated with matches copied from var data[lists], randomly pick one of the pairs by first character in pair matching mustStartWith, accounting for statistical frequency (akin to data[0][1] == 4426). If there will not be a match (akin to data[0][0][0] == 'a') for mustStartWith, pick any first letter from any pair in the whole data list of lists.
+    # WITH charMatchesList populated with matches copied from var data[lists], randomly pick one of the pairs by first character in pair matching mustStartWith, accounting for statistical frequency (akin to data[0][1] == 4426). If there will not be a match (akin to data[0][0][0] == 'aa') for mustStartWith, pick any first letter (or for trigrams or further, letters) from any pair in the whole data list of lists.
 
     # IF A MATCH WAS FOUND (addedFreq != 0), assign it to nextLetter for later recombobulation.
     if addedFreq != 0:
@@ -76,10 +78,12 @@ for i in range(0, genNumPhonemes):
             # logFile.write('now incremented to ' + str(freqIterAdd) + '\n')
             if freqIterAdd >= PRND:
                 pickedPair = str( charMatchesList[ (idx - 1) ] )
-                nextLetter = pickedPair[3]
+                nextLetter = pickedPair[4]      # Originally goofed that as ~[3] + ~[4]
                 # logFile.write('mustStartWith is \'' + mustStartWith + '\' . . .\n')
                 logFile.write('!-- FROM pickedPair ' + pickedPair + ' PICK nextLetter \'' + nextLetter + '\' at freqIterAdd (' + str(freqIterAdd) + ') >= PRND (' + str(PRND) + '); \n')
-                mustStartWith = nextLetter
+                # for BIGRAM use: mustStartWith = nextLetter
+                # for TRIGRAM use:
+                mustStartWith = (pickedPair[3] + pickedPair[4])
                 # logFile.write('mustStartWith is now \'' + mustStartWith + '\'\n')
                 break
     # IF A MATCH WAS NOT FOUND (addedFreq == 0), terminate the word by setting nextLetter to ' ', and set mustStartWith to a random selection from the entire data set of first letters (that appear in a group).
@@ -88,7 +92,9 @@ for i in range(0, genNumPhonemes):
         dataLen = len(data)
         PRND = randint(0, (dataLen - 1) )
         logFile.write('--! No match starts with \'' + mustStartWith + '\'; terminated word and picking mustStartWith val from data set . . .\n')
-        mustStartWith = data[ (PRND) ][0][0]
+        # for BIGRAM: mustStartWith = data[ (PRND) ][0][0]
+        # for TRIGRAM:
+        mustStartWith = ( data[ (PRND) ][0][0] + data[ (PRND) ][0][1] )
         logFile.write('PICKED new value \'' + mustStartWith + '\' for mustStartWith.\n')
 
     # WHATEVER HAPPENED for the value of addedFreq, we covered all possible cases to assign to nextLetter, so can do this now:

@@ -1,34 +1,29 @@
 # DESCRIPTION
-# Takes an input text file (and accepts one with an attempted wide acceptance of international (European) alphabet characters; in utf-8), extracts letter pair statistics and writes them to a database named <inputFileBaseName>.mkvch (.mkvch, because I may be using Markov chains? I'm not certain). Statistics are written to the database in the form et,3289 (<letter pair,how often the pair was found in the input text). The .mkvch database may then be used to generate statistically similar gibberish via gibGen.py. Note that statistics for spaces before and after letters are also in the database; this serves to terminate and begin generated words during recombobulation.
+# See this field in getTrigramStats.py
 
 # USAGE
 # python3 thisScript.py inputFile.txt
 
-# NOTE This may only work with python3.
-
-# import sys                           # allows reciept and parsing of command line arguments to script from a list of strings, sys.argv[].
+import sys                           # allows reciept and parsing of command line arguments to script from a list of strings, sys.argv[].
 import os                            # for one count it one function
 import codecs                        # allows opening a file with utf-8 interpretation
 from itertools import product        # for permutation with repetition, re: https://stackoverflow.com/a/3100016/1397555
 import re                            # for regex functions.
 
 # TO DO:
-
-# include punctuation in this array? (It already includes spaces for word termination.)
-# filter very common words out of imported text?
-# manually remove double-space '  ' from resulting letter pairs array (it is always the last item maybe?)
+# see list in getTrigramStats.py
 
 # NOT TO DO: calculate the least common factor of all letter pair occurances and divide them all by that to reduce the number space. First, this breaks the set if some of them are '1', and second, no. If the numbers get so huge that I have to get numPy, I might start considering that.
 
 # MARKOV CHAIN DATABASE GENERATING ALGORITHM.
 
 # OPTIONS: 1) a more extensive alphabet for texts from a variety of European languages other than English OR 2) narrow alphabet from smaller and *ethnocentric* ACSII code page. Both alphabets include a space character because it will be used as a statistical beginning and ending of word marker. For extensive alphabet uncomment the next line and comment out the line after it; for narrow alphabest visa-versa:
-alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿŁłŃńŅņŇňŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŴŵŶŷŸŹźŻżŽžſΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρςστυφχψωАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяỲ '
-# alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ '
+alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿŁłŃńŅņŇňŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŴŵŶŷŸŹźŻżŽžſΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρςστυφχψωАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяỲA̧a̧B̧b̧ÇçḈḉÇ̇ç̇ḐḑȨȩȨ̇ȩ̇ḜḝƏ̧ə̧Ɛ̧ɛ̧ĢģḨḩI̧i̧Ɨ̧ɨ̧ĶķĻļM̧m̧ŅņO̧o̧Ɔ̧ɔ̧Q̧q̧ŖŗŞşſ̧ß̧ŢţU̧u̧X̧x̧Z̧z̧AĀBCČDEĒFGĢHIĪJKĶLĻMNŅOPRSŠTUŪVZŽaābcčdeēfgģhiījkķlļmnņoprsštuūvzž '-"
+# alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'- "
 
 # Print an error and help message if no paramater 1 provided, then exit.
 if len(sys.argv) < 2:
-    print("ERROR: No input text provided for parameter 1 (parameter 1 empty).\n\nUSAGE: python thisScript.py inputFile.txt\n\nDESCRIPTION: Takes an input text file (and accepts one with an attempted wide acceptance of international (European) alphabet characters; in utf-8), extracts letter pair statistics and writes them to a database named <inputFileBaseName>.mkvch (.mkvch, because I may be using Markov chains? I'm not certain). Statistics are written to the database in the form et,3289 (<letter pair,how often the pair was found in the input text). The .mkvch database may then be used to generate statistically similar gibberish via gibGen.py. Note that statistics for spaces before and after letters are also in the database; this serves to terminate and begin generated words during recombobulation.")
+    print("ERROR: No input text provided for parameter 1 (parameter 1 empty).\n\nSee USAGE in the source code comments of this script.")
     sys.exit()
 
 # read file using UTF-8 interpretation, replace all newlines with spaces, and write the result to an object 'data'; re: https://stackoverflow.com/a/14787896/1397555
