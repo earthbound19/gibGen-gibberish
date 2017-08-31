@@ -1,4 +1,5 @@
 # DESCRIPTION: calls poem.py from python-Backus-Naur-poetry-generator n times, to create n (bad) poems in a /poems subfolder. Poems are initially given random file names, then renamed according to the poem title.
+
 # USAGE: call this script with one paramater, being a decimal number of times to generate poems.
 
 mkdir generated_poems
