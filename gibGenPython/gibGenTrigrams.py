@@ -13,7 +13,7 @@
 # dump recombobulation var to file when it gets to certain huge size, then continue filling it.
 # make gibberish dump file name partly based on timestamp.
 
-# import sys            # comment out for release; only for development.
+import sys            # comment out for release; only for development.
 import codecs        # allows opening a file with utf-8 
 from random import randint
 import csv          # to allow reading database into an array of lists or summat wut format
@@ -27,11 +27,11 @@ args = argParser.parse_args()
 if args.database:
     print('Source db ' + args.database + ' specified.')
 else:
-    args.database = '../databases/tenOldestSpokenLanguagesNamesTri.mkvch'
+    args.database = '../databases/onomatopoeiaTri.mkvch'
 if args.count:
     print('Letter groups to create number ' + args.count + ' specified.')
 else:
-    args.count = 2000
+    args.count = 750
 
 # READ database into var data
 with codecs.open(args.database, 'r', encoding='utf-8') as inputFile:

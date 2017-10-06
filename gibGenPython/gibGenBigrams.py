@@ -21,11 +21,11 @@ args = argParser.parse_args()
 if args.database:
     print('Source db ' + args.database + ' specified.')
 else:
-    args.database = '../databases/tenOldestSpokenLanguagesNamesBi.mkvch'
+    args.database = '../databases/onomatopoeiaBi.mkvch'
 if args.count:
     print('Letter groups to create number ' + args.count + ' specified.')
 else:
-    args.count = 2000
+    args.count = 750
 
 # READ database into var data
 with codecs.open(args.database, 'r', encoding='utf-8') as inputFile:
