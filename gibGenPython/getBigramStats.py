@@ -4,6 +4,8 @@
 # USAGE
 # python3 thisScript.py inputFile.txt
 
+# NOTE This may only work with python3. ALSO, if you use this against a list of words that are one per line with no space at the end, you'll get a database with no terminating space characters, and therefore words generated from it will never terminate. To avoid this, add a space character to the end of every line. (If you replace all newlines with spaces, you'll get trigrams that are letter-space-letter, which will skew trigram stats.)
+
 import sys                           # allows reciept and parsing of command line arguments to script from a list of strings, sys.argv[].
 import os                            # for one count it one function
 import codecs                        # allows opening a file with utf-8 interpretation

@@ -4,7 +4,7 @@
 # USAGE
 # python3 thisScript.py inputFile.txt
 
-# NOTE This may only work with python3.
+# NOTE This may only work with python3. ALSO, if you use this against a list of words that are one per line with no space at the end, you'll get a database with no terminating space characters, and therefore words generated from it will never terminate. To avoid this, add a space character to the end of every line. (If you replace all newlines with spaces, you'll get trigrams that are letter-space-letter, which will skew trigram stats.)
 
 import sys                           # allows reciept and parsing of command line arguments to script from a list of strings, sys.argv[].
 import os                            # for one count it one function
@@ -24,8 +24,8 @@ import re                            # for regex functions.
 # MARKOV CHAIN DATABASE GENERATING ALGORITHM.
 
 # OPTIONS: 1) a more extensive alphabet for texts from a variety of European languages other than English OR 2) narrow alphabet from smaller and *ethnocentric* ACSII code page. Both alphabets include a space character because it will be used as a statistical beginning and ending of word marker. For extensive alphabet uncomment the next line and comment out the line after it; for narrow alphabest visa-versa:
-alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿĀāČčĒēĢģĪīĶķĻļŁłŃńŅņŇňŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŴŵŶŷŸŹźŻżŽžſƆƏƐƗȨȩɔəɛɨΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρςστυφχψωАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяḈḉḐḑḜḝḨḩỲ '-"
-# alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'- "
+# alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿĀāČčĒēĢģĪīĶķĻļŁłŃńŅņŇňŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŴŵŶŷŸŹźŻżŽžſƆƏƐƗȨȩɔəɛɨΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρςστυφχψωАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяḈḉḐḑḜḝḨḩỲ '-"
+alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'- "
 
 # Print an error and help message if no paramater 1 provided, then exit.
 if len(sys.argv) < 2:
@@ -40,22 +40,22 @@ with codecs.open(sys.argv[1],"r", encoding='utf-8') as myfile:
 # data = data.lower()
 
 # create an object of all 2-permutations of alphabet characters (pairs), which is a *lot* of pairs, depending on the alphabet:
-# allAlpha2perms = list(itertools.permutations(alphabet, 2)); note that if you want 3-character permutations you can change the 2 in this next call to 3, or 4 for 4-char permutations etc; although you may have to refactor code following that to accomodate:
-allAlpha2perms = product(alphabet, repeat = 3)
+# allAlpha3perms = list(itertools.permutations(alphabet, 2)); note that if you want 3-character permutations you can change the 2 in this next call to 3, or 4 for 4-char permutations etc; although you may have to refactor code following that to accomodate:
+allAlpha3perms = product(alphabet, repeat = 3)
         # to test object (dev), unindent and uncomment the next two lines, but expect your console (and thus python--? where it doesn't choke if you don't try printing in the loop!) may choke on unicode characters it doesn't know how to print:
-        # for element in allAlpha2perms:
+        # for element in allAlpha3perms:
             # print(element[0] + " and " + element[1])
 
-# search source .txt file against all pairs in allAlpha2perms, counting matches, and write to stat file--it is *so nice* that itertools took care of permutations/nested looping for me:
+# search source .txt file against all pairs in allAlpha3perms, counting matches, and write to stat file--it is *so nice* that itertools took care of permutations/nested looping for me:
 # first get file base name re: https://stackoverflow.com/a/678242/1397555
         # or to access a list element in this, as it is a list of lists:
-        # print(allAlpha2perms[12][1])    # Prints list element 1 in array allAlpha2perms index 12.
+        # print(allAlpha3perms[12][1])    # Prints list element 1 in array allAlpha3perms index 12.
 paramFileNameNoExt =  os.path.splitext(sys.argv[1])[0]
 outfileName = paramFileNameNoExt + 'Tri.mkvch'
 # TO DO: figure out if the following should be codecs.open? Seems to work anyway:
 # Open a file for writing in utf-8 encoding:
 outfile = codecs.open(outfileName , "w", encoding='utf-8') 
-for element in allAlpha2perms:
+for element in allAlpha3perms:
     searchStr = element[0] + element[1] + element[2]
     result = re.findall(searchStr, data)
             # re: https://stackoverflow.com/a/3895658/1397555
