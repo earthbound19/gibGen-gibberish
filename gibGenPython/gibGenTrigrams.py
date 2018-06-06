@@ -1,7 +1,5 @@
-# IN DEVELOPMENT; an extension or refactor of gibGenBigrams.py
-
 # DESCRIPTION
-# Generates (recombobulates) gibberish from a database of character pair statistics (bigrams). See comments at the top of getBigramStats.py to get such a database. Writes results to gibber_out.txt
+# Generates (recombobulates) gibberish from a database of character triplet statistics (trigrams). See comments at the top of getTrigramStats.py to get such a database. Writes results to gibber_out.txt
 
 # USAGE
 # python3 thisScript.py -d [source database.mkvch] -c [count of words to generate]
@@ -9,11 +7,13 @@
 # python3 gibGenTrigrams.py -d ../databases/onomatopoeiaTri.mkvch -c 500
 
 # TO DO
+# make new word start on fail of match start with trigram that begins with a space. I think gibGenBigrams.py needs that too.
 # make log file optional (which means make a log function and refactor to pass it strings conditionally)
 # dump recombobulation var to file when it gets to certain huge size, then continue filling it.
 # make gibberish dump file name partly based on timestamp.
 
-import sys            # comment out for release; only for development.
+
+# CODE
 import codecs        # allows opening a file with utf-8 
 from random import randint
 import csv          # to allow reading database into an array of lists or summat wut format
@@ -21,8 +21,8 @@ import argparse     # to parse terminal arguments
 
 # Set up and make use of command line arguments; use defaults if none passed.
 argParser = argparse.ArgumentParser()
-argParser.add_argument("-d", "--database", help="database (source).mkvch database filename")
-argParser.add_argument("-c", "--count", help="how many letter groups to create")
+argParser.add_argument("-d", "--database", help="source database filename e.g. '../databases/SocialSecurityAdminCompleteNamesDBBi.mkvch'")
+argParser.add_argument("-c", "--count", help="How many letter groups to create. Databases include spaces in trigrams, so how many words are created depends on how many space characters are randomly encountered.")
 args = argParser.parse_args()
 if args.database:
     print('Source db ' + args.database + ' specified.')
@@ -44,8 +44,8 @@ logFile = codecs.open('gibGen_py_log.txt', 'w', encoding='utf-8')
 
 
 recombobulation = ''
-# seed mustStartWith var with space ' ' (or for trigrams make that a double space '  ')
-mustStartWith = '  '
+# seed mustStartWith var with space ' '.
+mustStartWith = ' '
 genNumPhonemes = int(args.count)
 charMatchesList = list()
 
