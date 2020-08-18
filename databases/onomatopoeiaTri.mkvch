@@ -1,237 +1,142 @@
-Aar,1
-A-c,2
-A-h,2
-CHO,2
-CHU,2
-CKS,1
-CKt,2
-Chr,1
-EEe,5
-Eee,5
-Eey,1
-Fff,2
-GA-,2
-GGA,2
-HA-,2
-HCK,1
-HII,1
-HOO,2
-HUC,2
-HUG,2
-III,1
-IIi,1
-Iio,1
-KSH,1
-Kaa,1
-Krr,1
-Ktu,2
-Mor,1
-Nnn,1
-OOO,4
-OOo,1
-OO ,1
-OO-,1
-Ooo,1
-O C,1
-O-C,1
-PHC,1
-Pss,1
-SHI,1
-THU,2
-Tsh,1
-UCK,2
-UGG,2
-Wha,1
-Woo,1
-W P,1
-YEE,1
-aTH,2
-aaa,51
+aaa,42
 aac,4
 aag,11
-aah,11
+aah,9
 aai,3
-aak,9
-aam,8
-aan,1
+aak,7
+aam,7
 aao,2
-aap,2
-aar,11
+aap,1
+aar,10
 aas,2
 aat,3
 aau,1
-aaw,2
-aa ,16
+aaw,1
+aa ,13
 aba,4
-abb,6
-abi,1
+abb,3
 abl,2
 abo,6
 abr,2
-abu,3
-ab ,3
-aca,1
-ach,4
-ack,31
-ac ,1
-ac-,2
-ada,4
-ade,1
+abu,1
+ab ,2
+ach,3
+ack,23
+ada,3
 ado,4
 adu,1
-ad ,1
-aff,8
-agg,10
+aff,5
+agg,9
 agh,7
 agk,2
-ag ,4
-aha,8
+ag ,3
+aha,7
 ahe,1
-ahh,10
+ahh,9
 ahn,1
-aho,3
+aho,2
 ahr,1
 aht,1
-ah ,21
-ah-,9
+ah-,5
+ah ,11
 aie,2
 aii,4
-ail,1
-aka,17
-ake,5
+aka,16
+ake,2
 akh,1
 aki,1
-akk,28
+akk,25
 akl,1
 ako,1
 aks,1
-akt,4
-aky,3
-ak ,33
-ak-,3
-ala,1
+akt,3
+ak ,27
 ali,5
-all,3
-alu,2
-al ,1
+all,1
 amb,2
-ame,1
 amf,1
-amm,14
-amp,1
-am ,26
+amm,12
+am ,23
 anc,1
-anf,1
 ang,12
-ank,4
+ank,3
 ann,1
-an ,4
-aoo,6
-aow,2
-ao ,1
+an ,3
+aoo,5
+aow,1
 ape,1
-apl,1
-apo,4
-app,7
+apo,3
+app,6
 apt,3
 apw,1
-ap ,20
-ap-,1
-aqu,1
-ara,4
-arb,1
+ap ,15
+ara,3
 arc,1
-ard,1
-are,2
+are,1
 arf,3
-arg,11
+arg,10
 ark,2
 arl,1
-aro,7
-arr,18
-art,1
-aru,1
-ar ,6
+aro,6
+arr,17
 ar-,1
-ash,34
-asp,2
+ar ,2
+ash,27
 ass,1
 ast,1
-ata,24
-atc,4
-ate,1
+ata,21
+atc,3
 ath,3
-ati,2
 atl,1
-ato,4
-att,15
-atu,1
-aty,1
-at ,22
+ato,1
+att,10
 at-,6
-aua,1
-aud,1
-aug,6
-aul,1
+at ,19
+aug,5
 auu,2
-awk,4
+awk,3
 awl,1
 awn,1
-awo,2
-awp,1
-awr,2
+awo,1
+awr,1
 aww,4
-aw ,8
+aw ,5
 ax ,2
 aya,3
 ayk,1
 ayo,1
-ay ,5
+ay ,3
 aza,4
 azi,1
 azo,1
 azr,1
 az ,1
-a C,1
-a K,1
-a a,7
-a b,13
-a c,4
-a d,2
-a e,1
-a f,1
-a g,4
-a h,4
-a k,5
-a m,1
-a n,2
-a o,1
-a r,4
-a s,4
-a t,6
-a u,1
-a w,2
-a y,5
-a-C,2
-a-H,1
 a-a,2
 a-b,9
-a-c,15
-a-d,6
-a-h,7
-a-k,4
-a-l,4
-a-o,1
+a-c,1
+a-d,3
+a-h,4
+a-k,3
+a-l,3
 a-p,1
-a-r,4
-a-t,9
-a-w,3
-a-z,1
+a-r,1
+a-t,8
+a a,6
+a b,13
+a c,1
+a e,1
+a g,3
+a h,3
+a k,2
+a m,1
+a r,4
+a s,1
+a t,4
+a y,5
 baa,3
 bab,2
 bad,4
 bah,1
-bal,1
 bam,5
 ban,1
 bap,1
@@ -241,43 +146,40 @@ bat,3
 baw,1
 bay,1
 baz,2
+ba-,5
 ba ,1
-ba-,6
 bbb,2
 bbd,1
-bbe,7
+bbe,1
 bbi,1
-bbl,8
+bbl,5
 bbu,2
 bbv,1
 bb ,1
 bdo,2
 bdr,1
-bdu,6
+bdu,1
 bee,5
-bel,3
+bel,2
 beo,1
-ber,7
-bet,1
-be ,2
+ber,1
+be ,1
 bif,1
-bin,1
-bir,3
 bit,1
-bla,19
-ble,19
+bla,18
+ble,14
 bli,4
 bll,4
 blo,5
 blu,3
-bob,2
+bob,1
 bof,1
 boi,2
 bok,1
 bol,1
 bom,3
 bon,2
-boo,26
+boo,25
 bop,1
 bor,2
 bow,1
@@ -293,9 +195,9 @@ buc,2
 bud,7
 buf,2
 buh,2
-bul,2
+bul,1
 bum,3
-bur,5
+bur,4
 buz,1
 bvv,1
 bwa,3
@@ -304,303 +206,197 @@ bwo,5
 bwu,1
 bww,2
 bzz,2
+b-b,1
 b b,4
-b d,2
 b f,1
 b h,1
-b m,2
-b p,1
-b r,1
+b m,1
 b s,1
-b t,1
 b w,1
-b-a,1
-b-b,1
-b-w,1
 cac,1
 car,1
-cat,1
-caw,1
-ca ,1
-ca-,1
-cch,1
 ccu,1
-ce ,1
-cha,28
+cha,11
 chc,2
-che,5
-chh,4
-chi,21
-chk,5
-chl,3
-cho,22
+che,4
+chh,2
+chi,10
+chk,2
+cho,18
 chp,1
-chr,3
 cht,2
-chu,25
-ch ,25
-ch-,2
-cis,1
-cka,7
+chu,5
+ch ,19
+cka,2
 ckb,1
-ckc,2
-cke,8
-cki,1
-ckk,4
-ckl,4
-cko,2
+cke,1
+ckk,3
+ckl,3
+cko,1
 cks,1
 ckt,1
-ck ,35
-ck-,13
-cla,12
-cli,11
-clo,6
-clt,1
+ck-,6
+ck ,24
+cla,8
+cli,5
+clo,3
 clu,2
-coc,2
-coo,2
-cot,2
+coc,1
 cou,1
-co ,1
-cra,8
-cre,7
-cri,3
-cro,5
+cra,7
+cre,5
+cro,1
 crr,1
 crs,1
-cru,6
-cry,1
-cuc,2
+cru,2
+cuc,1
 cup,1
-cur,2
-c f,1
-c t,3
-c-f,2
 c-t,1
-dab,5
-dad,1
-dak,1
+c t,3
+dab,4
 dam,2
-das,1
-da ,5
+da ,3
 dda,4
-ddl,1
 ddu,1
 ddw,1
 dd ,4
-dee,3
-del,1
-dem,1
-den,1
-deo,1
-der,1
-dge,1
-dic,1
-did,2
-dik,2
-din,4
+din,2
 dip,2
-dir,1
-dle,4
-dod,1
-dog,1
+dle,1
 dok,1
-don,5
-doo,13
-dow,2
+don,4
+doo,8
+dow,1
 dri,2
-dro,2
-dub,8
-duh,1
+dro,1
+dub,1
 dum,1
 dun,1
 dur,1
 dwh,1
-dwo,1
-dyg,1
-d b,1
 d c,2
-d f,3
-d h,1
-d k,3
-d p,1
+d f,2
+d k,2
 d t,2
-d w,5
-d'o,1
-d-a,1
-eEE,4
+d w,4
 eaa,2
 eag,1
 eak,2
-eal,1
-eam,2
-eao,1
 ear,2
 eat,1
-ea ,1
-ebe,2
+ebe,1
 ech,4
-eck,2
-edl,1
-edy,1
-ed-,1
-eeE,4
-eea,6
+eck,1
+eea,5
 eec,4
-eed,2
-eee,88
-eeh,1
-eek,5
-een,1
-eeo,4
-eep,12
-eer,2
-ees,2
-eet,7
-eew,1
-eey,9
-eez,5
-ee ,39
-ee-,12
+eee,73
+eek,2
+eeo,1
+eep,10
+ees,1
+eet,6
+eey,8
+eez,3
+ee-,10
+ee ,29
 egh,1
-ehe,2
 ehh,1
-eh ,4
-eh-,7
+eh-,5
+eh ,2
 eig,1
-eke,4
+eke,2
 ekk,1
-ek ,6
+ek ,2
 elc,2
-ell,2
 eln,1
 elp,1
-el ,3
-ema,1
-em ,5
-enc,1
-enk,2
-ent,2
-en ,1
-eoo,4
-eow,4
-eo ,1
-epe,1
-epo,1
-ep ,12
+el ,1
+em ,3
+enk,1
+eoo,1
+eow,3
+ep ,11
 era,1
 erc,1
-ere,2
-erf,1
 erg,1
-eri,2
 erk,1
 erp,1
-err,1
 ers,1
-ert,1
-erw,1
-ery,1
-er ,36
-er-,4
-esh,4
-esn,1
+er-,3
+er ,15
+esh,3
 es ,1
-ete,2
-ety,3
-et ,11
+et ,7
 eug,1
-ewe,1
-ewi,1
 eww,1
-ew ,8
-exp,1
+ew ,3
 ex ,1
 eya,5
 eye,2
-eyo,3
+eyo,1
 eyu,1
-ey ,4
 ey-,1
-eze,3
-ez ,2
-e F,1
-e N,1
-e W,1
-e a,6
-e b,9
-e c,9
-e d,4
-e e,10
-e f,4
-e g,6
-e h,7
-e j,2
-e k,5
-e m,3
-e o,2
-e p,6
-e r,6
-e s,11
-e t,7
-e v,3
-e w,8
-e y,1
-e z,2
-e-a,1
-e-d,1
+eze,2
+ez ,1
 e-e,4
-e-h,4
-e-o,2
-e-p,1
+e-h,3
+e-o,1
 e-r,1
-e-t,1
 e-y,1
+e a,5
+e b,8
+e c,5
+e d,2
+e e,9
+e f,2
+e g,4
+e h,2
+e i,1
+e j,1
+e k,2
+e m,1
+e o,1
+e p,1
+e r,4
+e s,7
+e t,4
+e v,3
+e w,5
+e z,2
 fac,1
-fak,1
-fal,1
 fam,1
-fan,1
 fap,1
-far,2
 fas,1
 faw,1
 faz,1
-fa-,1
-fch,1
 fee,1
 fer,1
 fet,1
 ffa,1
-ffc,1
 ffe,1
-fff,8
+fff,3
 ffh,1
-ffk,2
-ffl,4
+ffk,1
+ffl,2
 ffo,2
 ffr,1
-fft,3
+fft,1
 ffz,1
-ff ,23
 ff-,1
+ff ,13
 fht,1
-fil,1
-fin,1
 fiz,3
-fkr,2
-fla,6
-fle,4
-fli,5
-flo,3
+fkr,1
+fle,2
+fli,3
+flo,2
 flr,1
 fls,1
-flu,3
+flu,1
 foo,3
 fph,1
 fra,2
-fro,3
+fro,1
 frr,1
 fru,1
 frz,1
@@ -610,11 +406,9 @@ fth,1
 fto,1
 ftt,1
 ft ,1
-ft-,2
 fud,1
-fuf,1
 fup,1
-fwa,3
+fwa,2
 fwh,1
 fwo,3
 fwu,1
@@ -622,972 +416,675 @@ fwz,1
 fzo,1
 fzt,1
 fzz,8
-f F,1
+f-k,1
 f a,2
 f b,4
-f c,1
-f f,2
-f g,1
-f h,2
+f f,1
 f k,1
 f m,1
 f n,1
 f o,3
-f p,6
-f r,3
-f s,4
-f t,1
+f p,5
+f r,1
+f s,3
 f u,1
-f w,4
-f-k,1
+f w,3
 gaa,2
-gab,1
-gag,2
 gah,3
-gak,1
 gal,5
 gao,2
 gar,2
-gas,1
-ga ,5
-ga-,8
-gbi,1
-gch,2
+ga ,3
 gdo,1
-gec,1
-gee,1
 geh,1
-ger,1
 ge ,1
-gga,7
-ggg,17
+gga,1
+ggg,13
 ggh,12
-ggi,1
 ggk,2
-ggl,4
+ggl,1
 ggr,2
-gg ,15
-gha,2
+gg ,13
+gha,1
 ghh,21
-gho,1
 ght,1
 ghz,1
-gh ,23
 gh-,2
-gib,2
-gig,2
-gin,1
-gi ,1
-gi-,3
+gh ,20
+gig,1
 gkh,1
 gk ,7
 gla,1
-gle,7
+gle,5
 gli,1
-gll,1
-glo,2
 glu,4
 gl ,2
 gmu,1
-gna,4
+gna,1
 gnn,1
-gob,2
+gob,1
 gon,1
-goo,1
 gra,1
 gro,2
-grr,6
-gru,4
-gsh,1
-guf,2
+grr,5
+gru,2
+guf,1
 guk,1
-gul,1
-gur,3
+gur,2
 gwa,1
 gx ,1
-gyu,1
 gzz,1
+g-b,1
 g a,4
 g b,9
-g c,8
-g d,5
-g e,1
-g f,1
-g g,7
-g h,2
-g j,2
-g k,7
-g p,3
+g c,4
+g d,3
+g g,5
+g h,1
+g j,1
+g k,5
+g p,2
 g r,5
-g s,8
-g t,8
+g s,5
+g t,3
 g w,1
 g y,1
 g z,1
-g-a,1
-g-b,1
-g-c,2
-g-d,1
-g-m,1
-g-p,1
-g-t,1
-haa,6
+haa,4
 hab,1
-hac,6
-haf,1
-hah,9
-hak,15
-hal,2
-ham,6
+hac,3
+hah,4
+hak,10
+hal,1
+ham,5
 han,1
 hap,3
-har,7
-has,2
-hat,7
+har,3
+has,1
+hat,4
 hau,4
-haw,3
+haw,1
 haz,2
-ha ,13
-ha-,9
-hbl,2
+ha-,3
+ha ,9
+hbl,1
 hch,2
 hck,2
-hee,13
-heh,11
-hem,3
-her,2
-hew,4
-hey,3
-he ,3
-he-,1
+hee,10
+heh,7
+hem,2
+her,1
+hew,2
+hey,2
 hff,1
 hgh,1
 hha,2
-hhe,2
+hhe,1
 hhf,1
 hhg,1
-hhh,37
-hhk,1
+hhh,35
 hhm,1
 hhn,1
-hhr,4
+hhr,2
 hht,2
 hhu,2
-hhw,1
-hhz,2
-hh ,52
+hhz,1
 hh-,1
-hic,2
-hif,2
-hii,3
+hh ,51
+hic,1
+hii,1
 hik,3
-him,3
-hin,11
-hip,5
-hir,6
-his,6
-hit,6
-hiv,1
+him,2
+hin,4
+hip,2
+hir,4
+his,5
+hit,1
 hiz,1
-hi ,1
 hkc,1
-hkk,2
+hkk,1
 hks,1
 hkt,1
-hk ,3
-hk-,3
-hli,4
+hk-,1
+hk ,2
+hli,1
 hlo,3
-hl ,1
-hmm,5
-hmp,1
-hm ,2
-hnh,1
+hmm,4
+hm ,1
 hnk,1
-hnm,1
 hnn,3
-hoa,2
-hoc,3
-hoe,1
+hoc,1
 hoh,1
 hok,1
 hom,3
-hon,4
-hoo,43
-hop,3
+hon,2
+hoo,31
+hop,2
 hor,1
-hot,1
-hou,2
 how,3
 hoy,1
 ho ,2
 hpl,1
 hra,9
 hre,2
-hri,2
-hro,6
-hrr,10
-hru,3
-hr ,2
+hri,1
+hro,4
+hrr,3
+hru,2
+hr ,1
 hsh,1
 hss,2
 hte,1
 hth,1
 hto,2
 htt,1
-ht ,3
 ht-,2
-hub,2
-huc,1
-hud,9
-huf,4
-hug,12
-huh,2
-huk,9
-hum,14
-hun,6
-hup,4
-hur,1
-hus,2
-huu,3
-hu ,1
+ht ,2
+hub,1
+hud,8
+huf,1
+huh,1
+huk,8
+hum,5
+hun,2
+hup,1
+hus,1
+huu,1
 hvr,1
-hwa,8
+hwa,6
 hwi,1
-hwo,4
+hwo,2
 hwr,1
 hwu,1
-hww,2
+hww,1
 hye,1
-hzz,8
+hzz,7
 hz ,1
-h a,27
-h b,7
-h c,12
-h d,3
-h e,8
-h f,12
-h g,4
-h h,16
-h i,1
-h k,18
-h l,1
-h m,3
-h n,2
-h o,10
-h p,4
-h r,4
-h s,38
-h t,3
-h u,12
-h v,3
-h w,7
-h y,11
-h z,9
 h-a,1
 h-b,3
-h-c,3
+h-c,1
 h-g,1
-h-h,12
-h-k,1
-h-o,3
-h-p,3
-h-t,2
-h-u,5
-h-w,2
-iaa,1
-ibb,4
+h-h,7
+h-o,2
+h-u,2
+h-w,1
+h a,27
+h b,7
+h c,9
+h e,4
+h f,10
+h g,2
+h h,8
+h k,17
+h m,3
+h n,2
+h o,6
+h p,2
+h r,4
+h s,31
+h t,2
+h u,10
+h v,3
+h w,4
+h y,10
+h z,9
+ibb,1
 icc,1
-ich,1
-ick,19
+ick,6
 ic-,1
-idd,1
-ide,2
-idg,1
-ido,2
-id ,1
 iee,5
 ieg,1
-iek,1
 ie ,2
-ifa,1
-iff,5
+iff,2
 if ,1
-igg,2
-igh,2
-igi,3
-ig ,1
+igg,1
+igh,1
 iie,4
-iii,10
-iin,5
+iii,7
+iin,2
 iio,1
-iip,2
+iip,1
 iiu,1
 ii ,2
-ikd,1
 ike,1
 ikk,3
 iks,1
-ikt,4
+ikt,2
 ikx,1
-ik ,12
-ill,7
-ilt,1
-il ,1
+ik ,9
 ime,1
-imi,1
 imp,2
-inc,1
-ine,1
-ing,41
-ink,22
-inn,7
-int,1
-in ,2
-ion,3
-ioo,2
-ipb,1
-ipp,4
+ing,27
+ink,12
+inn,4
+ioo,1
+ipp,2
 ipt,1
-ip ,19
-ip-,5
-ird,3
-iri,1
-irl,1
-irm,1
-irn,1
+ip-,3
+ip ,13
 irp,1
-irr,4
-irt,1
+irr,2
 ir ,1
-ish,9
-isp,2
-iss,5
+ish,6
+isp,1
+iss,2
 ist,1
-itc,3
-ite,2
-ith,4
-itt,7
-ity,2
-it ,4
-it-,1
+itc,2
+ith,1
+itt,2
+ity,1
+it ,3
 iuu,1
-ive,1
-iwa,1
-izz,7
-i h,1
-i t,2
+izz,6
+i t,1
 i w,1
-i-g,3
-jab,1
 jan,1
-jar,1
 jee,1
 jin,1
-jug,1
-jum,1
-kaT,2
-kaa,1
-kab,9
-kad,4
+kab,8
+kad,3
 kaf,2
-kah,1
 kak,7
 kan,1
 kap,5
-kar,2
-kas,2
-kat,5
+kar,1
+kas,1
+kat,2
 kaw,3
 kay,1
 kaz,1
-ka ,10
-ka-,14
+ka-,13
+ka ,7
 kbo,1
 kch,2
-kci,1
-kco,1
-kdi,1
-kea,1
 kee,1
-kek,4
+kek,2
 kel,1
 kem,1
-ker,11
+ker,6
 kes,2
-ket,5
 kex,1
-key,1
-ke ,6
-kgn,1
+ke ,1
 kha,1
 khh,1
 khr,1
 kh ,1
-kig,1
-kil,1
-kir,2
-kis,2
-kit,3
-kka,2
-kkk,19
+kit,1
+kka,1
+kkk,18
 kkl,6
 kko,1
 kkr,3
 kkt,1
-kk ,43
-kk-,3
-kla,4
-kle,6
-kli,3
+kk ,41
+kla,3
+kle,4
+kli,2
 kll,6
-klo,5
+klo,4
 klu,3
 kl ,2
-kna,1
-kne,1
-kno,4
+kno,1
 koa,1
-koi,1
 kom,1
-kon,1
-koo,6
+koo,5
 kow,1
-ko ,1
 kpo,1
-kra,22
-kre,6
+kra,21
+kre,4
 kri,2
 krn,1
-krr,9
+krr,7
 kru,5
 ksh,5
 ks ,2
 kta,1
 kto,1
-kty,1
-kt ,11
+kt ,8
 kud,1
 kug,1
 kuh,1
 kuk,1
 kum,1
 kun,1
-kut,3
 kwa,1
-kwo,2
+kwo,1
 kx ,2
-kya,3
-ky-,1
 kza,2
 kzz,1
-k E,1
-k K,1
-k a,7
-k b,15
-k c,30
-k d,2
-k e,1
-k f,5
-k g,4
-k h,4
-k k,32
-k m,1
-k n,2
-k o,2
-k p,12
-k q,1
-k r,4
-k s,33
-k t,28
-k u,2
-k v,1
-k w,11
-k y,5
-k z,16
-k-a,8
+k-a,5
 k-b,2
-k-c,9
-k-k,1
 k-p,1
 k-s,1
-k-t,7
-k-w,1
+k a,7
+k b,15
+k c,23
+k e,1
+k f,5
+k g,1
+k h,3
+k k,26
+k n,2
+k o,1
+k p,8
+k q,1
+k r,2
+k s,29
+k t,21
+k u,2
+k v,1
+k w,8
+k y,1
+k z,14
 laa,5
 lab,2
-lac,8
+lac,1
 lad,1
 laf,1
 lag,1
 lah,1
 lak,3
-lam,10
-lan,9
-lap,5
-laq,1
+lam,8
+lan,8
+lap,3
 lar,1
-las,8
-lat,7
+las,6
+lat,5
 lau,1
 la-,2
-lbi,1
 lch,2
-lde,1
 lea,1
 leb,1
-led,1
 lee,1
-lem,1
-len,1
 lep,1
 ler,1
-les,1
-let,1
 leu,1
-lew,1
-le ,40
-le-,3
+le ,28
 lgg,2
 lgh,1
-lib,1
-lic,8
-lik,8
-lil,1
+lic,4
+lik,6
 lim,1
-lin,17
-lip,9
-lis,3
-lit,3
+lin,11
+lip,5
+lis,2
+lit,2
 lla,1
-llb,1
-lld,1
-lle,2
+lle,1
 llg,3
-lli,3
-lll,6
-llo,2
-ll ,11
-ll',1
+lli,1
+lll,5
+llo,1
+ll ,5
 ln ,1
-lob,2
-loc,1
-log,1
-lok,3
+lok,1
 lom,1
-lon,5
+lon,4
 loo,6
-lop,15
+lop,11
 lor,4
-los,3
+los,2
 lot,1
 lou,1
-low,1
-lp ,2
+lp ,1
 lrb,1
 lsh,1
 lss,1
-ltk,1
-lt ,1
 lub,1
-luc,3
+luc,2
 lud,1
 lug,2
-lum,6
+lum,2
 lun,5
-lup,2
+lup,1
 lur,4
-lus,1
-lut,2
-lu ,1
-lu-,6
+lut,1
+l-b,1
 l b,1
-l c,1
-l d,1
 l f,1
 l g,1
 l h,1
-l k,9
-l m,1
-l o,1
-l p,1
-l r,3
-l s,4
-l t,2
+l k,7
+l r,2
+l s,1
+l t,1
 l u,1
-l w,1
-l y,2
-l's,1
-l-b,1
 mac,1
 mak,1
-mar,1
 mas,1
-ma ,1
-ma-,3
-mba,1
 mbb,1
 mbe,1
-mbl,7
+mbl,6
 mbu,1
-mb ,3
+mb ,2
 mec,1
 meo,1
-mer,2
-mew,1
 me ,1
 mff,1
 mf ,3
-min,2
-mkg,1
 mks,1
-mle,1
-mma,3
 mmb,1
-mme,1
-mmi,1
-mmm,22
-mmo,1
+mmm,21
 mmp,2
 mmw,2
-mmy,1
-mm ,27
+mm ,25
 moa,1
-mon,1
-moo,3
-mop,1
-mor,2
+moo,1
 mo ,1
-mpa,6
-mpe,2
-mpf,1
-mph,6
-mpp,3
+mpe,1
+mph,3
+mpp,2
 mpt,1
-mp ,27
-mp-,1
-mro,1
-mrr,2
-mum,2
+mp ,19
+mum,1
 mun,1
 mur,2
 mus,1
 mut,1
-muu,1
-mwa,1
 mww,2
-my ,1
-m H,1
-m Y,1
+m-b,4
+m-k,1
+m-t,1
+m-w,2
 m a,2
 m b,32
 m c,3
 m d,1
 m f,8
-m h,7
-m k,19
-m m,5
-m p,7
+m h,4
+m k,17
+m m,3
+m p,6
 m q,1
-m s,19
-m t,6
-m v,5
-m w,8
-m z,7
-m-b,4
-m-k,1
-m-t,2
-m-w,4
-naa,2
-nab,1
-nac,1
-nak,3
-nao,1
-nap,3
+m s,14
+m t,4
+m v,4
+m w,7
+m z,6
+naa,1
+nak,2
+nap,2
 nar,1
-nas,1
-nat,1
-naw,1
-nce,1
-nch,12
+nch,7
 nck,1
-nee,2
 nei,1
-nel,1
-neo,1
-ne ,2
-nfa,1
 nff,2
 nga,7
-ngb,1
 nge,1
-ngg,8
+ngg,6
 ngh,4
 ngk,3
 ngl,2
 ngn,1
-ng ,48
-ng-,5
+ng-,1
+ng ,32
 nhh,1
-nhn,1
-nh ,3
-nic,1
-nif,2
-nik,3
+nh ,2
+nif,1
+nik,2
 nip,1
 nka,1
 nkc,1
-nke,2
-nkl,3
+nkl,1
 nks,2
-nky,1
-nk ,40
-nm ,1
-nna,1
+nk ,29
 nnc,1
-nne,1
 nnf,1
-nng,12
-nnh,4
+nng,10
+nnh,3
 nnk,1
-nnn,20
+nnn,11
 nnt,1
-nny,1
-nn ,7
-nn-,2
-noc,3
+nn ,5
+noc,1
 nok,2
 nor,2
-not,1
-nse,1
-ns ,1
 ntc,1
-nti,1
-nto,1
-nt ,8
+nt ,5
 nya,1
-ny ,1
-n P,1
 n b,5
-n c,1
-n d,1
 n g,1
 n h,1
-n k,1
 n m,1
-n n,1
-n o,1
 n p,1
-n r,1
-n s,2
-n t,1
 n u,2
 n v,1
-n-n,2
-oOO,1
-oW ,1
-oaa,3
-oah,1
-oak,2
+oaa,2
+oak,1
 oam,1
 oan,2
 oar,3
-oau,2
 oax,1
-oa ,1
-obb,5
+obb,2
 obo,1
-ob ,3
-ob-,2
-ock,12
-oco,3
+ob-,1
+ob ,1
+ock,5
 oc ,3
-ode,1
-odl,2
-odo,1
-oeb,1
-oee,2
-oey,2
-oe ,2
+odl,1
+oe ,1
 off,5
 ofp,1
 of ,5
-oga,8
-ogg,1
-ogy,1
-og ,2
-oha,1
+oga,5
+og ,1
 ohh,1
 oho,1
-oh ,4
 oh-,2
-oii,1
+oh ,1
 oik,1
-oin,9
-oka,1
-oke,1
-okk,3
-ok ,24
+oin,6
+okk,2
+ok ,17
 oli,1
-oll,1
-omb,4
+omb,2
 omk,1
 omm,7
 omo,1
-omp,12
-om ,63
-om-,6
-one,1
-ong,13
-onk,11
-onn,2
-ons,2
+omp,9
+om-,3
+om ,57
+ong,7
+onk,8
+onn,1
 ont,2
-on ,4
-ooO,1
-ooW,1
-ooa,5
-oob,1
-ood,2
-ooe,4
+on ,1
+ooa,2
+ood,1
 oof,10
-oog,8
-ooh,3
-ook,8
-oom,80
-oon,6
-ooo,76
-oop,11
-oor,3
-oos,19
-oot,6
+oog,5
+ooh,1
+ook,4
+oom,68
+oon,3
+ooo,62
+oop,5
+oos,18
+oot,3
 oou,1
-oow,5
+oow,4
 ooz,1
-oo ,36
-oo-,13
-opo,2
+oo-,5
+oo ,22
 opp,2
-ops,5
-op ,25
-ora,2
+ops,2
+op ,17
 orb,1
-ore,5
-ori,1
-ork,1
-orp,4
+ore,1
+orp,3
 ort,2
 ory,1
 or ,1
-or-,2
-osh,22
-osi,1
+osh,21
 oss,1
-ota,3
-otl,1
-oto,2
-ott,2
+ott,1
 otz,1
-ot ,8
-ouc,3
+ot ,4
+ouc,2
 ouf,1
-oug,2
+oug,1
 ouh,1
-oup,1
 ouu,1
-ouy,1
-ou ,1
-ou-,1
-owf,1
 owi,2
-owl,4
+owl,2
 own,1
-owo,2
-owr,2
-owt,1
-oww,9
-ow ,31
-ow-,5
+owo,1
+owr,1
+oww,7
+ow-,2
+ow ,23
 oy ,1
 oze,1
-o a,6
-o b,4
-o c,5
-o d,2
-o e,1
-o g,1
-o h,3
-o k,1
-o m,2
-o o,5
-o p,1
-o s,1
-o t,2
-o v,2
-o w,7
-o y,3
 o-a,1
 o-c,1
-o-g,1
-o-h,3
-o-p,2
-o-v,1
-o-w,6
-pad,1
+o-h,1
+o-w,2
+o a,6
+o b,3
+o c,1
+o d,2
+o h,3
+o k,1
+o m,1
+o o,5
+o w,4
+o y,1
 paf,1
-pah,3
+pah,1
 pak,1
 pam,1
 pan,2
-pap,1
 par,1
-pat,3
-pa ,3
-pa-,5
-pbe,1
-pbi,1
-pee,4
-pen,1
-per,3
-pet,1
-pew,2
+pat,1
+pa-,1
+per,2
 pe ,1
 pff,1
 pft,1
-pf ,2
 phc,1
 phe,1
 phh,2
-pho,4
+pho,2
 phr,1
-pht,2
+pht,1
 phz,1
-ph ,7
-pia,1
-pic,1
-pin,3
-pip,1
-pit,4
+ph ,4
+pin,2
+pit,2
 pka,1
-pla,14
+pla,13
 pli,3
-plo,9
+plo,7
 pls,1
-plu,5
-poc,1
-poe,1
-poi,3
-pok,2
-pon,2
-poo,10
+plu,3
+poi,2
+pok,1
+pon,1
+poo,4
 pop,1
-por,1
-pot,4
+pot,1
 pow,7
-ppa,1
-ppe,1
-ppf,1
 pph,1
-ppi,1
 ppo,1
 ppp,3
 ppr,1
@@ -1595,520 +1092,380 @@ ppt,1
 pp ,13
 pra,1
 pre,1
-prr,2
+prr,1
 prz,1
 psk,1
-pss,2
-ps ,5
+ps ,2
 pth,3
-pto,3
+pto,2
 ptt,1
 pt ,3
-puh,3
-puk,2
-pum,2
-pun,2
+puk,1
+pun,1
 pur,1
 put,1
 pwa,1
 pwo,2
 px ,1
-p b,21
-p c,13
-p d,3
-p f,10
-p g,8
-p h,2
-p k,8
-p l,2
-p p,8
-p r,4
-p s,16
-p t,10
-p u,1
-p v,4
-p w,18
-p y,4
-p z,9
-p-a,1
-p-c,1
 p-d,1
 p-f,1
-p-h,1
-p-p,1
-p-t,2
-p-w,2
-qua,5
-que,4
-qui,4
+p-t,1
+p b,21
+p c,7
+p d,2
+p f,8
+p g,4
+p h,1
+p k,7
+p p,3
+p r,4
+p s,11
+p t,8
+p u,1
+p v,1
+p w,14
+p y,1
+p z,9
+qua,3
+que,2
+qui,1
 qun,1
-raa,21
-rab,2
-rac,5
-rah,3
-rai,1
+raa,19
+rab,1
+rac,4
+rah,1
 rak,30
 ram,1
 ran,1
-rao,1
 rap,2
 rar,2
-ras,13
-rat,21
-rau,2
-raw,5
+ras,12
+rat,17
+rau,1
+raw,4
 rax,1
-ray,3
+ray,2
 raz,1
-ra ,2
 ra-,2
 rbb,1
-rbl,2
+rbl,1
 rbo,1
 rch,2
-rde,1
-rd ,3
-rea,3
-ree,26
+rea,1
+ree,20
 rek,1
-rep,1
-rer,1
 res,1
-re ,7
+re ,2
 rff,1
-rfu,1
 rf ,3
-rgg,5
-rgh,14
+rgg,4
+rgh,13
 rgl,4
 rgx,1
 rhh,1
-rhr,1
 rib,1
-ric,6
-rid,2
-rie,1
+ric,1
 rif,1
-rig,1
 rii,5
-rik,3
-ril,1
-rin,9
+rik,2
+rin,7
 rip,2
-ris,1
-rit,2
-riz,2
+rit,1
+riz,1
 rkk,4
 rkr,1
 rkt,1
-rk ,3
-rle,1
-rl ,2
+rk ,2
+rl ,1
 rmm,1
 rmu,1
-rm ,1
 rnc,1
-rnn,1
-rnt,1
-roa,6
-rob,1
+roa,5
 rog,1
-rok,2
-ron,2
-roo,24
-rou,4
-row,7
+rok,1
+ron,1
+roo,18
+rou,1
+row,2
 rpl,1
 rpp,1
 rps,1
 rpx,1
-rp ,11
-rra,14
-rre,3
+rp ,10
+rra,9
+rre,2
 rrf,1
-rrg,9
-rrh,2
-rri,10
+rrg,8
+rrh,1
+rri,6
 rrk,1
 rrm,1
-rrn,1
-rro,6
+rro,3
 rrp,2
-rrr,56
-rrs,2
-rru,6
-rry,1
+rrr,38
+rrs,1
+rru,4
 rrz,2
-rr ,29
 rr-,2
-rsh,3
+rr ,23
+rsh,2
 rsp,1
-rti,1
 rtl,1
-rt ,4
-rub,1
-ruf,1
+rt ,2
 ruk,2
-rum,17
-run,10
-rup,2
+rum,10
+run,6
+rup,1
 rur,1
 rus,2
-ruu,4
-rwa,1
+ruu,3
 rye,1
 ryg,1
-ry ,3
 rzz,4
-r M,1
-r a,3
-r b,5
-r c,10
-r f,2
-r g,8
-r h,3
-r j,2
-r k,1
-r l,1
-r m,4
-r n,1
-r p,7
-r r,11
-r s,7
-r t,4
-r w,6
-r y,3
-r-p,3
+r-p,2
 r-r,1
 r-s,1
 r-t,2
-r-w,2
+r a,3
+r b,5
+r c,3
+r f,1
+r g,6
+r h,2
+r l,1
+r m,1
+r n,1
+r p,4
+r r,8
+r s,4
+r w,5
+r y,1
 sca,1
-sch,5
-scr,9
-sel,1
-se ,1
-sha,7
-shb,2
-she,1
-shh,19
-shi,4
+sch,1
+scr,4
+sha,5
+shb,1
+shh,17
+shi,1
 shk,4
-shl,4
-shm,1
-sho,7
-shr,11
+shl,3
+sho,5
+shr,10
 shs,1
 sht,1
 shu,4
 shv,1
-shw,3
+shw,1
 shy,1
 shz,2
-sh ,65
-sh-,1
-sif,1
-sig,1
-sio,1
+sh ,54
 sip,1
-sis,1
 siz,1
 ska,3
-ski,1
 skl,1
 sko,1
-skr,13
+skr,10
 skx,1
 sk ,1
 sla,4
 sli,2
 sll,1
-slo,4
-slu,2
+slo,3
+slu,1
 sma,3
 sme,1
-sna,7
-sne,1
-sni,7
+sna,5
+sni,4
 sno,2
 sob,1
 soc,1
 sok,1
-sor,1
 spa,2
-spb,1
 spe,1
 spi,2
 spk,1
-spl,18
-spo,2
+spl,17
 spu,2
-sp ,2
-squ,11
+squ,5
 srr,1
-sse,1
-ssh,13
+ssh,11
 ssi,1
-sss,28
-sst,2
+sss,23
+sst,1
 ssw,1
 ssz,1
-ss ,8
+ss ,5
 stl,2
-str,2
 stt,1
-stu,1
-st ,2
-sur,1
-sus,1
+st ,1
 sva,1
 svb,1
-swa,5
+swa,3
 swi,1
 swo,3
 swu,1
 szh,1
 szi,1
 szz,2
-s T,1
 s b,1
 s c,1
-s f,1
 s h,2
 s k,1
-s o,2
-s s,4
+s o,1
+s s,2
 s v,1
-s w,2
 s y,1
 s z,1
-s-w,1
 tab,2
-taf,1
 tak,2
 tan,1
-tap,2
-tat,28
-ta ,7
-ta-,8
-tch,15
-tee,1
-ten,1
-ter,20
-te ,2
+tap,1
+tat,24
+ta-,6
+ta ,6
+tch,13
+ter,10
 tha,2
 thc,1
 the,1
 thh,2
-thi,3
 thl,1
-tho,10
-thr,6
+tho,8
+thr,3
 ths,2
-thu,8
-thw,13
+thu,5
+thw,11
 thz,3
-th ,3
-th-,2
-tic,3
-tig,1
+th ,2
+tic,2
 tik,1
-tin,4
-tio,2
+tin,1
 tip,1
 tis,1
-tit,1
-tiw,1
-tkt,1
-tk ,1
-tk-,5
-tle,7
-tli,1
-tlo,1
-tlu,1
+tle,4
 tl ,1
-toc,7
+toc,4
 toe,1
 tok,2
-tol,1
-tom,2
 ton,1
-too,8
-tot,1
+too,4
 tow,3
-to ,1
-to-,2
-tri,5
-tru,2
+tri,3
 tsh,1
 tsk,1
 tta,1
-tte,17
+tte,9
 tth,1
-tti,1
-ttl,3
+ttl,1
 ttt,6
 ttz,1
 tt ,10
-tuc,3
-tuf,1
-tuk,2
-tul,1
 tun,1
-tup,2
-tu-,1
 twa,1
-twe,2
-twi,3
-tyd,1
+twe,1
+twi,1
 tys,1
-ty ,1
-ty-,4
 tza,1
 tzh,1
 tzi,1
 tzz,5
-t a,1
-t b,9
-t c,5
-t d,2
-t f,5
-t g,1
-t h,3
-t k,3
-t l,2
-t p,12
-t r,11
-t s,18
-t t,5
-t u,1
-t v,6
-t w,5
-t y,1
-t z,15
-t'c,1
 t-a,1
 t-b,1
-t-c,2
-t-f,1
-t-h,1
-t-k,2
+t-c,1
 t-t,5
-uab,1
+t a,1
+t b,9
+t c,2
+t e,1
+t f,3
+t g,1
+t h,2
+t k,1
+t l,1
+t p,7
+t r,10
+t s,12
+t t,4
+t u,1
+t v,6
+t w,3
+t z,15
 uac,1
-ual,1
 uaw,2
-ua ,1
-uba,1
 ubb,2
-ubd,6
+ubd,1
 ubw,1
-ub ,5
-ub-,1
-ucc,1
-uch,3
-uck,12
+ub ,3
+uch,2
+uck,5
 uda,1
 udd,10
-ude,1
 udo,1
-ud ,9
-uea,2
+ud ,8
+uea,1
 uel,1
-ue ,1
-uff,11
+uff,4
 uf ,1
-ugc,2
-ugg,13
-ugh,9
+ugg,7
+ugh,6
 ugk,1
-ug ,3
-ug-,3
+ug ,1
 uha,1
-uhh,5
+uhh,4
 uhm,1
 uhn,1
-uh ,6
-uh-,10
-uig,1
+uh-,3
+uh ,2
 uii,1
-uir,2
 uis,1
-uka,1
-uke,1
 ukk,7
-uk ,9
-uk-,1
-ula,1
-ule,1
-ulp,1
-ul ,1
+uk ,8
 ul-,1
-umb,7
+umb,6
 umf,2
-umm,5
-ump,29
-um ,7
+ump,13
 um-,5
-unc,9
-ung,2
-unk,11
+um ,3
+unc,5
+ung,1
+unk,8
 unn,10
-unt,4
-un ,1
-uoo,1
+unt,3
 upp,2
-up ,9
-up-,2
+up ,3
 urb,1
 urg,3
 urk,4
-url,1
 urm,1
 urp,7
-urr,11
+urr,5
 urt,1
 ur ,1
-ush,4
+ush,2
 ust,1
-usu,1
 us ,1
 utt,3
-ut ,2
-ut-,2
-uug,3
-uuh,4
+uug,2
+uuh,3
 uui,1
 uuk,1
 uum,1
-uun,4
-uuo,1
-uur,4
-uuu,16
+uun,3
+uur,3
+uuu,10
 uuw,1
 uw ,1
-uyh,1
 uzz,1
-u f,1
-u t,1
-u w,1
-u-f,1
-u-w,7
-var,1
 vas,1
 va-,1
 vbe,1
-vee,1
-ver,1
-vid,1
-vii,1
 vip,2
 vnn,1
-voo,4
+voo,3
 vpp,1
 vra,1
-vre,7
-vro,6
+vre,6
+vro,4
 vru,1
 vss,1
 vt ,1
@@ -2116,67 +1473,52 @@ vvn,1
 vvp,1
 vvs,1
 vvv,5
-vwo,1
 vzz,3
-waa,4
+waa,2
 wac,2
-waf,2
-wah,6
-wak,9
-wal,1
+waf,1
+wah,1
+wak,7
 wam,2
 wan,2
-wap,9
+wap,7
 war,1
-was,2
+was,1
 wat,1
-wau,1
 way,1
 waz,1
-wa ,1
 wa-,1
-wee,7
-wff,1
+wa ,1
+wee,2
 wfr,1
-wha,12
-whe,6
-whi,16
-who,10
+wha,11
+whe,4
+whi,9
+who,5
 whr,4
-whu,16
-wid,2
+whu,8
 wie,2
-wil,4
 win,1
 wip,1
 wis,1
-wit,2
 wkk,2
-wk ,3
-wlu,7
-wl ,5
+wk ,2
+wl ,3
 wn ,2
 wob,2
-wog,1
-woi,1
-wok,5
+wok,3
 wom,4
-won,1
-woo,31
-wop,2
-wor,1
+woo,22
+wop,1
 wos,2
-wow,8
+wow,4
 wo ,1
-wp ,1
 wra,2
 wro,1
 wrr,1
-wr ,3
-wt ,1
+wr ,1
 wub,1
 wud,2
-wuh,1
 wuk,1
 wum,5
 wuu,1
@@ -2184,98 +1526,66 @@ wwa,3
 wwk,1
 wwo,2
 wwu,1
-www,7
-ww ,14
+www,6
+ww ,11
 wza,1
-w W,1
+w-c,1
+w-w,1
 w a,1
 w b,4
-w c,7
+w c,3
 w e,2
 w f,1
-w g,2
-w h,1
+w g,1
 w k,7
-w l,1
-w m,4
-w n,2
-w o,4
-w p,7
-w r,1
+w m,1
+w o,3
+w p,6
 w s,6
 w t,2
-w v,1
-w w,4
+w w,2
 w y,4
-w-c,1
-w-w,4
-xpl,1
 x b,4
 x e,1
 x k,1
 x s,1
 yaa,9
-yac,1
 yag,2
 yah,4
-yak,5
-yam,1
-yap,1
-yar,3
-yaw,1
-yay,4
+yar,2
+yay,3
 ya-,1
-ydi,1
 yee,9
 yel,1
 yen,1
 yeo,1
 yew,2
 ygm,1
-ygo,1
-yhn,1
 yik,1
-yip,2
 ykk,1
-yod,1
-yoi,1
-yoo,2
-yor,1
-you,1
-yow,5
+yow,3
 yo ,1
 ysh,1
-yuc,2
-yum,1
-yuu,2
+yuu,1
 yya,1
 yyy,2
 yy ,2
+y-y,1
 y a,1
 y b,2
-y c,2
-y h,3
-y m,1
-y p,2
-y r,1
+y h,1
 y s,1
-y v,1
-y w,1
-y y,2
 y z,1
-y-c,3
-y-d,1
-y-y,2
 zaa,2
 zak,3
 zam,5
 zap,3
 zas,2
 zat,4
-zch,3
+zch,2
 zee,2
 zer,1
-ze ,3
+ze ,2
 zgr,1
 zha,1
 zhh,1
@@ -2294,8 +1604,7 @@ zl ,1
 zoa,1
 zoi,2
 zok,1
-zon,1
-zoo,5
+zoo,3
 zot,1
 zow,1
 zpf,1
@@ -2310,7 +1619,7 @@ zvi,1
 zvt,1
 zvv,1
 zwa,5
-zwo,3
+zwo,2
 zww,1
 zza,6
 zzc,2
@@ -2322,36 +1631,68 @@ zzr,10
 zzt,19
 zzu,1
 zzv,1
-zzw,5
-zzz,41
-zz ,16
+zzw,4
+zzz,39
+zz ,15
+z-w,1
+z-z,3
 z b,2
 z c,2
 z f,6
-z g,2
+z g,1
 z j,1
-z r,1
 z t,1
 z w,1
 z z,4
-z-w,1
-z-z,3
- CH,1
- Ch,1
- Ee,1
- Ff,2
- HA,1
- Ka,1
- Kr,1
- Mo,1
- Nn,1
- PH,1
- Ps,1
- Ts,1
- Wh,1
- Wo,1
- YE,1
- aa,21
+-aa,2
+-ac,6
+-ah,1
+-a-,1
+-a ,1
+-ba,3
+-be,1
+-bl,4
+-bo,7
+-br,4
+-bu,1
+-bw,2
+-ch,5
+-da,1
+-di,1
+-do,2
+-ee,4
+-fl,1
+-ga,1
+-ha,7
+-he,7
+-ho,1
+-ka,3
+-ko,2
+-li,2
+-lu,1
+-oh,1
+-oo,1
+-ou,1
+-pl,2
+-po,1
+-pw,1
+-ra,1
+-ro,2
+-sh,1
+-sp,1
+-ta,11
+-tc,2
+-th,2
+-ti,1
+-to,2
+-uh,2
+-wa,2
+-wo,5
+-yo,1
+-yy,1
+-zw,1
+-z-,2
+ aa,20
  ac,2
  ag,6
  ah,13
@@ -2361,209 +1702,171 @@ z-z,3
  ar,13
  at,1
  aw,3
- a-,1
  ba,28
  bb,2
  bd,2
- be,6
+ be,5
  bi,1
  bl,29
- bo,26
+ bo,24
  br,25
  bt,2
  bu,20
  bw,9
  bz,2
- ca,4
- ch,55
- cl,28
- co,4
- cr,21
- cu,4
- da,4
- de,1
- di,8
- do,7
- dr,3
- du,3
- dw,1
- d',1
- ee,22
- eh,1
+ ca,1
+ ch,31
+ cl,18
+ co,2
+ cr,13
+ cu,1
+ di,3
+ do,4
+ dr,2
+ du,1
+ ee,18
  er,1
- ex,1
- fa,8
+ fa,5
  fe,2
  ff,3
- fi,5
- fl,16
+ fi,3
+ fl,7
  fo,1
- fr,5
+ fr,4
  fs,3
  ft,2
  fu,2
- fw,9
+ fw,8
  fz,9
- ga,8
+ ga,3
  gd,1
- ge,3
+ ge,1
  gg,2
- gi,2
- gl,8
- gn,3
- go,3
- gr,10
- gs,1
- gu,7
+ gi,1
+ gl,6
+ gn,1
+ go,2
+ gr,7
+ gu,4
  gw,1
  gz,1
- ha,16
- he,11
- hh,4
- hi,4
- hm,5
+ ha,9
+ he,5
+ hh,3
+ hi,3
+ hm,3
  hn,1
- ho,10
- hr,1
- hu,12
+ ho,6
+ hu,5
  in,1
- ja,3
+ ja,1
  je,1
  ji,1
- ju,2
- ka,33
- ke,12
+ ka,28
+ ke,9
  kh,2
- ki,5
  kk,4
- kl,14
- kn,5
- ko,5
+ kl,12
+ kn,1
+ ko,2
  kp,1
- kr,25
+ kr,24
  kt,1
- ku,7
- kw,3
+ ku,6
+ kw,2
  kz,3
  k-,2
- la,3
- li,4
- lo,1
+ la,1
  lu,1
- ma,1
- me,2
+ me,1
  mf,1
- mk,1
- ml,1
  mm,6
- mo,7
- mr,3
- mu,6
- mw,1
- na,2
- ne,2
+ mo,2
+ mu,4
+ ne,1
  nf,1
- nn,3
+ nn,1
  no,2
  ny,1
  oh,2
  oi,1
- oo,19
- or,1
+ oo,12
  ou,1
- ow,7
- pa,11
- pe,5
+ ow,4
+ pa,7
  pf,1
- ph,11
- pi,7
- pl,8
- po,16
+ ph,8
+ pi,2
+ pl,6
+ po,11
  pp,1
- pr,4
- ps,2
- pt,4
- pu,7
+ pr,3
+ pt,3
+ pu,2
  pw,1
- p-,1
  qu,2
- ra,25
- re,1
- ri,7
- ro,5
- rr,15
- ru,6
+ ra,18
+ ri,5
+ ro,3
+ rr,13
+ ru,4
  ry,1
- sc,15
- sh,36
- si,4
- sk,19
- sl,13
+ sc,6
+ sh,27
+ si,1
+ sk,15
+ sl,11
  sm,4
- sn,16
- so,4
- sp,25
- sq,11
+ sn,11
+ so,3
+ sp,22
+ sq,5
  sr,1
- ss,12
- st,3
- su,1
+ ss,11
  sv,2
- sw,9
+ sw,7
  sz,3
- ta,8
+ ta,6
  tc,5
- te,1
- th,36
- ti,9
- tk,1
- tl,2
- to,9
- tr,5
+ th,27
+ ti,5
+ to,4
+ tr,3
  ts,2
  tt,1
- tu,6
- tw,6
+ tu,1
+ tw,3
  tz,3
- t',1
  ug,3
- uh,4
- um,1
+ uh,2
  un,5
  ur,3
  uu,5
- va,2
- ve,1
- vi,3
- vo,4
- vr,13
+ va,1
+ vi,1
+ vo,3
+ vr,11
  vv,1
- vw,1
  vz,3
- wa,9
- we,2
+ wa,3
  wf,1
- wh,55
- wi,1
- wl,1
- wo,17
+ wh,39
+ wo,13
  wr,2
- wu,6
- ya,18
+ wu,5
+ ya,11
  ye,10
- yi,3
- yo,7
- yu,3
+ yi,1
+ yo,1
  yy,2
  za,5
- zc,1
  ze,2
  zg,1
  zh,1
  zi,2
  zk,1
  zl,4
- zo,8
+ zo,6
  zp,1
  zr,2
  zu,1
@@ -2571,85 +1874,3 @@ z-z,3
  zw,3
  zz,29
  z-,2
-'ch,1
-'oh,1
-'s-,1
--CH,3
--HA,1
--aa,3
--ac,6
--ah,1
--ak,1
--a ,1
--a-,7
--ba,3
--be,1
--bl,4
--bo,7
--br,4
--bu,1
--bw,2
--ch,33
--cl,4
--cr,2
--da,2
--di,2
--do,5
--du,1
--ee,4
--fa,1
--fl,3
--fr,1
--ga,2
--gi,3
--ha,13
--he,10
--hi,1
--ho,3
--hu,3
--ka,4
--ki,1
--kn,1
--ko,2
--ku,2
--li,3
--lu,1
--mm,1
--nn,2
--oh,2
--oo,3
--ou,1
--pa,2
--pe,1
--pl,2
--po,5
--pu,2
--pw,1
--ra,2
--re,1
--ro,2
--ru,1
--sh,1
--sp,1
--ta,12
--tc,2
--th,6
--ti,1
--tk,5
--tl,1
--to,4
--tu,1
--uh,5
--vr,1
--wa,3
--we,1
--wh,7
--wi,4
--wl,6
--wo,13
--ya,1
--yo,1
--yy,1
--zo,1
--zw,1
--z-,2
