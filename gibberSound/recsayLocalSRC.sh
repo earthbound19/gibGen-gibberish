@@ -1,5 +1,5 @@
 # DESCRIPTION
-# Reminds you every 50 minutes to get up and stretch, by way of three random words proncounced by randomly chosen voices (Mac only). Records the statements to ~.m4a files and opens them in default sound player. If you pass the script a string parameter (see USAGE), it terminates immediately (without looping every 50 minutes).
+# Reminds you every 50 minutes to get up and stretch, by way of three random words pronounced by randomly chosen voices (Mac only). Records the statements to ~.m4a files and opens them in default sound player. If you pass the script a string parameter (see USAGE), it terminates immediately (without looping every 50 minutes).
 
 # DEPENDENCIES
 # The Mac "say" command, and gnu corutils shuf (here as gshuf via homebrew coreutils).
