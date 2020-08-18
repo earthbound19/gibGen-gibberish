@@ -45,7 +45,7 @@ allAlpha2perms = product(alphabet, repeat = 2)
         # or to access a list element in this, as it is a list of lists:
         # print(allAlpha2perms[12][1])    # Prints list element 1 in array allAlpha2perms index 12.
 paramFileNameNoExt =  os.path.splitext(sys.argv[1])[0]
-outfileName = paramFileNameNoExt + '.mkvch'
+outfileName = paramFileNameNoExt + 'Bi.mkvch'
 # TO DO: figure out if the following should be codecs.open? Seems to work anyway:
 # Open a file for writing in utf-8 encoding:
 outfile = codecs.open(outfileName , "w", encoding='utf-8') 
