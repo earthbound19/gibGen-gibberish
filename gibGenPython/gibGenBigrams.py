@@ -2,13 +2,12 @@
 # Generates (recombobulates) gibberish from a database of character pair statistics (bigrams). See comments at the top of getBigramStats.py to get such a database. Writes results to gibber_out.txt
 
 # USAGE
-# See comments under USAGE in source code of gibGenTrigrams.py.
+# See commends under USAGE in source code of gibGenTrigrams.py.
 
 # TO DO
 # See TO DO list in gibGenTrigrams.py
 
-
-# CODE
+# import sys            # comment out for release; only for development.
 import codecs        # allows opening a file with utf-8 
 from random import randint
 import csv          # to allow reading database into an array of lists or summat wut format
@@ -22,11 +21,11 @@ args = argParser.parse_args()
 if args.database:
     print('Source db ' + args.database + ' specified.')
 else:
-    args.database = '../databases/onomatopoeiaBi.mkvch'
+    args.database = '../databases/tenOldestSpokenLanguagesNamesBi.mkvch'
 if args.count:
     print('Letter groups to create number ' + args.count + ' specified.')
 else:
-    args.count = 750
+    args.count = 2000
 
 # READ database into var data
 with codecs.open(args.database, 'r', encoding='utf-8') as inputFile:
