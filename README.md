@@ -13,10 +13,9 @@ This repository may eventaully host source code for various recombobulators I ha
 # PREVIOUS NOTES
 ..which I may need to correct and/or integrate into the above--and I think replace mentioned tools that were removed:
 
-This is a collection of algorythmic/statistical gibberish generators. I authored one of these from scratch, and the others are from sources which are clearly public, and I release all of the work in this folder to the Public Domain. 09/03/2015 05:38:24 PM -RAH
+This is a collection of algorithmic/statistical gibberish generators. I authored one of these from scratch, and the others are from sources which are clearly public, and I release all of the work in this folder to the Public Domain. 09/03/2015 05:38:24 PM -RAH
 
-This documentation is lacking, and possibly inaccurate, so you know.
-TO DO: fix that. 03/20/2016 10:55:04 PM -RAH
+This documentation is lacking, and possibly inaccurate, so you know. TO DO: fix that. 03/20/2016 10:55:04 PM -RAH
 
 ### QUICK SETUP AND USE
 Copy your text corpus from which to generate gibberish into the _corpus folder, then copy and paste whatever you will from that into pyMarkovGibGen/gibbersource.txt, and from that folder, run the command:
@@ -26,14 +25,7 @@ And behold the results in so many files named e.g.:
 pyMarkovGibGen\generated_IAE_gibberish__2016_01_02__02_33_12__707556.txt
 --the file name will vary by the date and time it happens to be at the moment the gibberish is generated.
 
-Python must be installed and in your %PATH% for this to work. If it makes a difference, this was coded and tested with Python 3.1
-
-OR
-
-Work similarly with the working executable you can find in:
-GibbGen\GibbGenCPP\bin\1.0-functional\gibbgen_DOS.exe
-
-At this writing, I wish to resurrect the code for GibbGenDOS (and rename it GibbGenCPP, and release it as cross-platform) and put it back together with console argument options; but the source files are (unfortunately) a mess of unversioned variant source files. I think it has to be done from scratch with those source files as reference.
+Python must be installed and in your PATH for this to work. If it makes a difference, this was coded and tested with Python 3.1
 
 ## Contents of subfolder pyMarkovGibGen
 
@@ -52,21 +44,6 @@ Anything you wish to keep must be copied out of that result text file before you
 You may donate Public Domain texts to the _corpus directory. Copy and paste any text from the corpus into e.g. pyMarkovGibGen\gibbersource.txt (and then save the file), and then execute _runMarkovGen.py as explained.
 
 It would be great to implement this program as a web page where visitors can save and share results.
-
-## contents of subfolder GibbGenCPP
-
-This is the code and some archived executables for console program I wrote (in the aughts?) which generates nonsense words statistically similar to a source corpus. The executable must have the included file named english_dictionary, or it will crash when it attempts to generate words.
-
-A notable feature is the creation of new language "dictionaries" (which for real-world purposes would be farcically useless) and transliterations of English documents into that language. It doesn't handle any of the numerous language details providing for variations of any word: it will for example have two completely different words for the singular and plural of a given source English word. But it makes for rather fun chains of nonsense "language."
-
-It would be great to reimplement this program in e.g. javascript as a web service.
-
-I've attempted resurrecting source code for versions 1.0 and 1.1. They've compiled fine in DevCPP and Code::Blocks, but I believe something involving the word generator and/or language generator class(es) is causing crashes at run time. Compiles will transliterate source documents with a loaded "language" ok, but new word generation crashes.
-
-I want to recreate it with command line switch capability e.g. with the boost options library . . . probably recreating it from scratch with guidance from the myriad borken source code files.
-
-09/01/2015 04:06:58 AM -RAH
-
 
 ---
 ### REVISION HISTORY
