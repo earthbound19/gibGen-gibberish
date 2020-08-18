@@ -4,8 +4,6 @@
 # USAGE
 # python3 thisScript.py inputFile.txt
 
-# NOTE This may only work with python3. ALSO, if you use this against a list of words that are one per line with no space at the end, you'll get a database with no terminating space characters, and therefore words generated from it will never terminate. To avoid this, add a space character to the end of every line. (If you replace all newlines with spaces, you'll get trigrams that are letter-space-letter, which will skew trigram stats.)
-
 import sys                           # allows reciept and parsing of command line arguments to script from a list of strings, sys.argv[].
 import os                            # for one count it one function
 import codecs                        # allows opening a file with utf-8 interpretation
@@ -15,11 +13,12 @@ import re                            # for regex functions.
 # TO DO:
 # see list in getTrigramStats.py
 
-# ~
+# NOT TO DO: calculate the least common factor of all letter pair occurances and divide them all by that to reduce the number space. First, this breaks the set if some of them are '1', and second, no. If the numbers get so huge that I have to get numPy, I might start considering that.
+
 # MARKOV CHAIN DATABASE GENERATING ALGORITHM.
 
 # OPTIONS: 1) a more extensive alphabet for texts from a variety of European languages other than English OR 2) narrow alphabet from smaller and *ethnocentric* ACSII code page. Both alphabets include a space character because it will be used as a statistical beginning and ending of word marker. For extensive alphabet uncomment the next line and comment out the line after it; for narrow alphabest visa-versa:
-alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿĀāČčĒēĢģĪīĶķĻļŁłŃńŅņŇňŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŴŵŶŷŸŹźŻżŽžſƆƏƐƗȨȩɔəɛɨΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρςστυφχψωАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяḈḉḐḑḜḝḨḩỲ '-"
+alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿŁłŃńŅņŇňŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŴŵŶŷŸŹźŻżŽžſΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρςστυφχψωАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяỲA̧a̧B̧b̧ÇçḈḉÇ̇ç̇ḐḑȨȩȨ̇ȩ̇ḜḝƏ̧ə̧Ɛ̧ɛ̧ĢģḨḩI̧i̧Ɨ̧ɨ̧ĶķĻļM̧m̧ŅņO̧o̧Ɔ̧ɔ̧Q̧q̧ŖŗŞşſ̧ß̧ŢţU̧u̧X̧x̧Z̧z̧AĀBCČDEĒFGĢHIĪJKĶLĻMNŅOPRSŠTUŪVZŽaābcčdeēfgģhiījkķlļmnņoprsštuūvzž '-"
 # alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'- "
 
 # Print an error and help message if no paramater 1 provided, then exit.
@@ -46,7 +45,7 @@ allAlpha2perms = product(alphabet, repeat = 2)
         # or to access a list element in this, as it is a list of lists:
         # print(allAlpha2perms[12][1])    # Prints list element 1 in array allAlpha2perms index 12.
 paramFileNameNoExt =  os.path.splitext(sys.argv[1])[0]
-outfileName = paramFileNameNoExt + 'Bi.mkvch'
+outfileName = paramFileNameNoExt + '.mkvch'
 # TO DO: figure out if the following should be codecs.open? Seems to work anyway:
 # Open a file for writing in utf-8 encoding:
 outfile = codecs.open(outfileName , "w", encoding='utf-8') 
