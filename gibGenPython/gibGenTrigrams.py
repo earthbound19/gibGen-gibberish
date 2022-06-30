@@ -4,9 +4,9 @@
 # Generates (recombobulates) gibberish from a database of character pair statistics (bigrams). See comments at the top of getBigramStats.py to get such a database. Writes results to gibber_out.txt
 
 # USAGE
-# python3 thisScript.py -d [source database.mkvch] -c [count of words to generate]
+# python gibGenTrigrams.py -d [source database.mkvch] -c [count of words to generate]
 # For example:
-# python3 gibGenTrigrams.py -d ../databases/onomatopoeiaTri.mkvch -c 500
+# python gibGenTrigrams.py -d ../databases/onomatopoeiaTri.mkvch -c 500
 
 # TO DO
 # make log file optional (which means make a log function and refactor to pass it strings conditionally)

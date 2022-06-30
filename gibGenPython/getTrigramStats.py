@@ -2,9 +2,11 @@
 # Takes an input text file (and accepts one with an attempted wide acceptance of international (European) alphabet characters; in utf-8), extracts letter pair statistics and writes them to a database named <inputFileBaseName>.mkvch (.mkvch after Markov chains). Statistics are written to the database in the form et,3289 (<letter pair,frequency the pair appeared). The .mkvch database may then be used to generate statistically similar gibberish via gibGenTrigrams.py. Note that statistics for spaces before and after letters are also in the database; this serves to terminate and begin generated words during recombobulation. Dashes and single quotes (apostraphes) are also included.
 
 # USAGE
-# python3 thisScript.py inputFile.txt
+# python getTrigramStats.py inputFile.txt
 
-# NOTE This may only work with python3. ALSO, if you use this against a list of words that are one per line with no space at the end, you'll get a database with no terminating space characters, and therefore words generated from it will never terminate. To avoid this, add a space character to the end of every line. (If you replace all newlines with spaces, you'll get trigrams that are letter-space-letter, which will skew trigram stats.)
+# NOTES
+# - This may only work with python3.
+# - If you use this against a list of words that are one per line with no space at the end, you'll get a database with no terminating space characters, and therefore words generated from it will never terminate. To avoid this, add a space character to the end of every line. (If you replace all newlines with spaces, you'll get trigrams that are letter-space-letter, which will skew trigram stats.)
 
 import sys                           # allows reciept and parsing of command line arguments to script from a list of strings, sys.argv[].
 import os                            # for one count it one function
@@ -13,10 +15,11 @@ from itertools import product        # for permutation with repetition, re: http
 import re                            # for regex functions.
 
 # TO DO:
-# Paramaterize alphabet support (import from text file of characters separated by newlines)
-# Separate script to generate an alphabet from a corpus?
-# Optionally filter very common words out of imported text?
-# Manually remove double-space '  ' from resulting letter pairs array (it is always the last item)?
+# - Accept characters from this list without error: ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿŁłŃńŅņŇňŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŴŵŶŷŸŹźŻżŽžſΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρςστυφχψωАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяỲA̧a̧B̧b̧ÇçḈḉÇ̇ç̇ḐḑȨȩȨ̇ȩ̇ḜḝƏ̧ə̧Ɛ̧ɛ̧ĢģḨḩI̧i̧Ɨ̧ɨ̧ĶķĻļM̧m̧ŅņO̧o̧Ɔ̧ɔ̧Q̧q̧ŖŗŞşſ̧ß̧ŢţU̧u̧X̧x̧Z̧z̧AĀBCČDEĒFGĢHIĪJKĶLĻMNŅOPRSŠTUŪVZŽaābcčdeēfgģhiījkķlļmnņoprsštuūvzž
+# - Paramaterize alphabet support (import from text file of characters separated by newlines)
+# - Separate script to generate an alphabet from a corpus?
+# - Optionally filter very common words out of imported text?
+# - Manually remove double-space '  ' from resulting letter pairs array (it is always the last item)?
 
 # NOT TO DO: calculate the least common factor of all letter pair occurances and divide them all by that to reduce the number space. First, this breaks the set if some of them are '1', and second, no. If the numbers get so huge that I have to get numPy, I might start considering that.
 

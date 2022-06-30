@@ -2,7 +2,7 @@
 # See this field in getTrigramStats.py
 
 # USAGE
-# python3 thisScript.py inputFile.txt
+# python getBigramStats.py inputFile.txt
 
 import sys                           # allows reciept and parsing of command line arguments to script from a list of strings, sys.argv[].
 import os                            # for one count it one function
@@ -18,7 +18,7 @@ import re                            # for regex functions.
 # MARKOV CHAIN DATABASE GENERATING ALGORITHM.
 
 # OPTIONS: 1) a more extensive alphabet for texts from a variety of European languages other than English OR 2) narrow alphabet from smaller and *ethnocentric* ACSII code page. Both alphabets include a space character because it will be used as a statistical beginning and ending of word marker. For extensive alphabet uncomment the next line and comment out the line after it; for narrow alphabest visa-versa:
-alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿŁłŃńŅņŇňŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŴŵŶŷŸŹźŻżŽžſΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρςστυφχψωАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяỲA̧a̧B̧b̧ÇçḈḉÇ̇ç̇ḐḑȨȩȨ̇ȩ̇ḜḝƏ̧ə̧Ɛ̧ɛ̧ĢģḨḩI̧i̧Ɨ̧ɨ̧ĶķĻļM̧m̧ŅņO̧o̧Ɔ̧ɔ̧Q̧q̧ŖŗŞşſ̧ß̧ŢţU̧u̧X̧x̧Z̧z̧AĀBCČDEĒFGĢHIĪJKĶLĻMNŅOPRSŠTUŪVZŽaābcčdeēfgģhiījkķlļmnņoprsštuūvzž '-"
+alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'- "
 # alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'- "
 
 # Print an error and help message if no paramater 1 provided, then exit.
